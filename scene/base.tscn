@@ -1,9 +1,14 @@
-[gd_scene load_steps=2 format=3 uid="uid://cxrvkmoyf6ngb"]
+[gd_scene load_steps=3 format=3 uid="uid://cxrvkmoyf6ngb"]
 
 [ext_resource type="Texture2D" uid="uid://camqqwp3e7ley" path="res://res/img/test.jpg" id="1_5r2yw"]
+[ext_resource type="Texture2D" uid="uid://ba1kndqi31qw4" path="res://res/img/test2.jpg" id="2_7v4ru"]
 
 [node name="base" type="Node2D"]
 
 [node name="Test" type="Sprite2D" parent="."]
-position = Vector2(606, 321)
+position = Vector2(351, 264)
 texture = ExtResource("1_5r2yw")
+
+[node name="Test2" type="Sprite2D" parent="."]
+position = Vector2(864, 289)
+texture = ExtResource("2_7v4ru")
