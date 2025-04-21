@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://dd8cccax2ka8e"]
+
+[ext_resource type="Texture2D" uid="uid://cfys7ecm2vite" path="res://res/img/UI/blue_button13.png" id="1_xet3m"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_u2h41"]
+font_color = Color(0, 0, 0, 1)
+
+[node name="AfterWorkInterface" type="Node2D"]
+
+[node name="BlueButton13" type="Sprite2D" parent="."]
+position = Vector2(786, 865.5)
+scale = Vector2(2.51579, 1)
+texture = ExtResource("1_xet3m")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 738.0
+offset_top = 852.5
+offset_right = 834.0
+offset_bottom = 875.5
+text = "前往下一日"
+label_settings = SubResource("LabelSettings_u2h41")

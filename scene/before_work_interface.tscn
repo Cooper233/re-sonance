@@ -1,0 +1,205 @@
+[gd_scene load_steps=15 format=3 uid="uid://d3pwa5vfhbp47"]
+
+[ext_resource type="Texture2D" uid="uid://e8fdol07e8o" path="res://res/00017-0-72405962_p12_master1200.png" id="1_bn16y"]
+[ext_resource type="Texture2D" uid="uid://b3u0o123474l" path="res://res/img/UI/grey_panel.png" id="2_b46bk"]
+[ext_resource type="Texture2D" uid="uid://ddtfp8wm58un0" path="res://res/img/UI/blue_panel.png" id="3_j46re"]
+[ext_resource type="Texture2D" uid="uid://douov1skthksu" path="res://res/img/B43E0F30B317F0B04D25E311930A038A.png" id="4_3a0j7"]
+[ext_resource type="Texture2D" uid="uid://ba1kndqi31qw4" path="res://res/img/test2.jpg" id="4_e7thc"]
+[ext_resource type="Texture2D" uid="uid://blaojlxhgj32n" path="res://res/img/UI/arrowRight.png" id="5_xradm"]
+[ext_resource type="Texture2D" uid="uid://bn06rr5607p5h" path="res://res/img/UI/arrowLeft.png" id="6_qyex5"]
+[ext_resource type="Texture2D" uid="uid://camqqwp3e7ley" path="res://res/img/test.jpg" id="7_b87qw"]
+[ext_resource type="Texture2D" uid="uid://cgdub5kcpwtes" path="res://res/img/UI/checkmark.png" id="8_ce8n7"]
+[ext_resource type="Texture2D" uid="uid://cfys7ecm2vite" path="res://res/img/UI/blue_button13.png" id="9_rlxnb"]
+[ext_resource type="Texture2D" uid="uid://4qau8g6e1lqv" path="res://res/img/UI/cross.png" id="11_ery6l"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_dkm0b"]
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_eatkb"]
+line_spacing = 5.0
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_wpm17"]
+font_color = Color(0, 0, 0, 1)
+
+[node name="BeforeWorkInterface" type="Node2D"]
+
+[node name="00017-0-72405962P12Master1200" type="Sprite2D" parent="."]
+position = Vector2(798, 611)
+scale = Vector2(3.58259, 3.58259)
+texture = ExtResource("1_bn16y")
+
+[node name="NinePatchRect2" type="NinePatchRect" parent="."]
+offset_left = 893.0
+offset_top = 72.0
+offset_right = 1416.0
+offset_bottom = 817.0
+texture = ExtResource("2_b46bk")
+patch_margin_left = 6
+patch_margin_top = 6
+patch_margin_right = 6
+patch_margin_bottom = 6
+
+[node name="NinePatchRect3" type="NinePatchRect" parent="NinePatchRect2"]
+layout_mode = 0
+offset_left = 18.0
+offset_top = 20.0
+offset_right = 490.0
+offset_bottom = 714.0
+texture = ExtResource("3_j46re")
+patch_margin_left = 6
+patch_margin_top = 6
+patch_margin_right = 6
+patch_margin_bottom = 6
+
+[node name="NinePatchRect2" type="NinePatchRect" parent="NinePatchRect2"]
+layout_mode = 0
+offset_left = 535.0
+offset_top = 5.0
+offset_right = 646.0
+offset_bottom = 122.0
+texture = ExtResource("3_j46re")
+patch_margin_left = 6
+patch_margin_top = 6
+patch_margin_right = 6
+patch_margin_bottom = 6
+
+[node name="Label" type="Label" parent="NinePatchRect2/NinePatchRect2"]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 9.0
+offset_right = 79.0
+offset_bottom = 32.0
+text = "最近推荐"
+
+[node name="Label2" type="Label" parent="NinePatchRect2/NinePatchRect2"]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 38.0
+offset_right = 96.0
+offset_bottom = 71.0
+text = "用户动态"
+
+[node name="Label3" type="Label" parent="NinePatchRect2/NinePatchRect2"]
+offset_left = 13.0
+offset_top = 66.0
+offset_right = 77.0
+offset_bottom = 89.0
+text = "用户信息"
+
+[node name="NinePatchRect" type="NinePatchRect" parent="."]
+offset_left = 45.0
+offset_top = 116.0
+offset_right = 559.0
+offset_bottom = 812.0
+texture = ExtResource("2_b46bk")
+patch_margin_left = 6
+patch_margin_top = 6
+patch_margin_right = 6
+patch_margin_bottom = 7
+
+[node name="Label3" type="Label" parent="NinePatchRect"]
+layout_mode = 0
+offset_left = 366.0
+offset_top = 11.0
+offset_right = 495.0
+offset_bottom = 34.0
+text = "昨日推荐曲目  1/5"
+label_settings = SubResource("LabelSettings_dkm0b")
+
+[node name="NinePatchRect" type="NinePatchRect" parent="NinePatchRect"]
+layout_mode = 0
+offset_left = 23.0
+offset_top = 37.0
+offset_right = 485.0
+offset_bottom = 652.0
+texture = ExtResource("3_j46re")
+patch_margin_left = 6
+patch_margin_top = 6
+patch_margin_right = 6
+patch_margin_bottom = 7
+
+[node name="GreyPanel2" type="Sprite2D" parent="NinePatchRect/NinePatchRect"]
+position = Vector2(237.5, 195.75)
+scale = Vector2(4.15, 1.015)
+texture = ExtResource("2_b46bk")
+
+[node name="B43e0f30b317f0b04d25e311930a038a2" type="Sprite2D" parent="NinePatchRect/NinePatchRect"]
+position = Vector2(82, 194.5)
+scale = Vector2(0.140534, 0.133165)
+texture = ExtResource("4_e7thc")
+
+[node name="Label2" type="Label" parent="NinePatchRect/NinePatchRect"]
+offset_left = 126.0
+offset_top = 155.5
+offset_right = 257.0
+offset_bottom = 234.5
+text = "哈基米那鲁多
+基米
+【REMIX】【纯音】【鬼畜】"
+label_settings = SubResource("LabelSettings_eatkb")
+
+[node name="GreyPanel" type="Sprite2D" parent="NinePatchRect/NinePatchRect"]
+position = Vector2(233.5, 67.25)
+scale = Vector2(4.15, 1.015)
+texture = ExtResource("2_b46bk")
+
+[node name="B43e0f30b317f0b04d25e311930a038a" type="Sprite2D" parent="NinePatchRect/NinePatchRect"]
+position = Vector2(78, 66)
+scale = Vector2(0.140534, 0.133165)
+texture = ExtResource("4_3a0j7")
+
+[node name="Label" type="Label" parent="NinePatchRect/NinePatchRect"]
+layout_mode = 0
+offset_left = 122.0
+offset_top = 27.0
+offset_right = 253.0
+offset_bottom = 106.0
+text = "Living Mice
+C418
+【OST】【EMO】"
+label_settings = SubResource("LabelSettings_eatkb")
+
+[node name="ArrowRight" type="Sprite2D" parent="NinePatchRect"]
+position = Vector2(483, 672)
+texture = ExtResource("5_xradm")
+
+[node name="ArrowLeft" type="Sprite2D" parent="NinePatchRect"]
+position = Vector2(23, 669)
+texture = ExtResource("6_qyex5")
+
+[node name="Test" type="Sprite2D" parent="NinePatchRect"]
+position = Vector2(71, -43)
+scale = Vector2(0.566038, 0.566038)
+texture = ExtResource("7_b87qw")
+
+[node name="Label2" type="Label" parent="NinePatchRect"]
+layout_mode = 0
+offset_left = 133.0
+offset_top = -75.0
+offset_right = 346.0
+offset_bottom = -12.0
+text = "用户：诗歌剧
+【二次元】【摇滚】【EMO】
+整体满意度：良好"
+
+[node name="Checkmark" type="Sprite2D" parent="."]
+position = Vector2(446, 221)
+texture = ExtResource("8_ce8n7")
+
+[node name="BlueButton13" type="Sprite2D" parent="."]
+position = Vector2(680, 865)
+scale = Vector2(2.51579, 1)
+texture = ExtResource("9_rlxnb")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 632.0
+offset_top = 852.0
+offset_right = 728.0
+offset_bottom = 875.0
+text = "开始今日推荐"
+label_settings = SubResource("LabelSettings_wpm17")
+
+[node name="Cross" type="Sprite2D" parent="."]
+position = Vector2(453, 351)
+texture = ExtResource("11_ery6l")
