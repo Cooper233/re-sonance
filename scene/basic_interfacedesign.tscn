@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://oasd1li32uv0"]
+[gd_scene load_steps=25 format=3 uid="uid://oasd1li32uv0"]
 
 [ext_resource type="Texture2D" uid="uid://c8a8ybgkdf83w" path="res://res/img/background/bg-working.png" id="1_kvvcb"]
 [ext_resource type="Texture2D" uid="uid://d3dn1tpvr2wlj" path="res://res/img/UI/蓝 镂空2.png" id="2_51esu"]
@@ -10,6 +10,17 @@
 [ext_resource type="Texture2D" uid="uid://blaojlxhgj32n" path="res://res/img/UI/arrowRight.png" id="5_uyeyt"]
 [ext_resource type="Texture2D" uid="uid://bn06rr5607p5h" path="res://res/img/UI/arrowLeft.png" id="6_rqu3d"]
 [ext_resource type="Texture2D" uid="uid://cfys7ecm2vite" path="res://res/img/UI/blue_button13.png" id="8_vkyec"]
+[ext_resource type="Shader" path="res://shader/ui/ui_glowing.gdshader" id="10_jot6j"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_cjkqg"]
+shader = ExtResource("10_jot6j")
+shader_parameter/glowingColor = Color(0.156, 0.328, 45.946, 1)
+shader_parameter/outline_lenth = 1.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_dl2ic"]
+shader = ExtResource("10_jot6j")
+shader_parameter/glowingColor = Color(10, 0, 10, 1)
+shader_parameter/outline_lenth = 1.0
 
 [sub_resource type="LabelSettings" id="LabelSettings_sxlpu"]
 font_color = Color(0, 0, 0, 1)
@@ -25,6 +36,16 @@ shadow_color = Color(0, 0, 0, 1)
 font_size = 40
 shadow_color = Color(0.996078, 1, 0.698039, 1)
 
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_uxfqh"]
+shader = ExtResource("10_jot6j")
+shader_parameter/glowingColor = Color(10, 0, 10, 1)
+shader_parameter/outline_lenth = 1.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_acwbt"]
+shader = ExtResource("10_jot6j")
+shader_parameter/glowingColor = Color(10, 0, 10, 1)
+shader_parameter/outline_lenth = 1.0
+
 [sub_resource type="LabelSettings" id="LabelSettings_gdvdv"]
 font_size = 32
 font_color = Color(0, 0, 0, 1)
@@ -33,21 +54,44 @@ font_color = Color(0, 0, 0, 1)
 code = "shader_type canvas_item;
 
 uniform vec4 glowingColor:source_color= vec4(1,0,1,1);
-
+uniform float outline_lenth=1.0;
 void fragment() {
 	//COLOR=vec4(1,0,0,1);
+	vec2 uv=UV;
+	vec2 uv_up=uv+vec2(0,TEXTURE_PIXEL_SIZE.y);
+	vec2 uv_down=uv+vec2(0,-TEXTURE_PIXEL_SIZE.y);
+	vec2 uv_left=uv+vec2(-TEXTURE_PIXEL_SIZE.x,0);
+	vec2 uv_right=uv+vec2(TEXTURE_PIXEL_SIZE.x,0);
+	
+	vec4 color_up=texture(TEXTURE,uv_up);
+	vec4 color_down=texture(TEXTURE,uv_down);
+	vec4 color_left=texture(TEXTURE,uv_left);
+	vec4 color_right=texture(TEXTURE,uv_right);
+	
+	vec4 outline=color_down+color_left+color_right+color_up;
+	outline.rgb=glowingColor.rgb;
+	
+	vec4 origin=texture(TEXTURE,uv);
+	COLOR=mix(origin,outline,origin.a);
 	
 }
 "
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_7g171"]
 shader = SubResource("Shader_uwdot")
-shader_parameter/glowingColor = Color(1, 0, 1, 1)
+shader_parameter/glowingColor = Color(10, 0, 10, 1)
+shader_parameter/outline_lenth = 1.0
 
 [sub_resource type="LabelSettings" id="LabelSettings_wvm28"]
 line_spacing = 35.0
 font_size = 35
 font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="Environment" id="Environment_n1348"]
+background_mode = 3
+glow_enabled = true
+glow_strength = 0.8
+glow_bloom = 0.11
 
 [node name="BasicInterface" type="Node2D"]
 
@@ -56,6 +100,7 @@ position = Vector2(802, 451)
 texture = ExtResource("1_kvvcb")
 
 [node name="NinePatchRect4" type="NinePatchRect" parent="."]
+material = SubResource("ShaderMaterial_cjkqg")
 offset_left = 56.0
 offset_top = 22.0
 offset_right = 222.0
@@ -67,6 +112,7 @@ patch_margin_right = 6
 patch_margin_bottom = 6
 
 [node name="NinePatchRect" type="NinePatchRect" parent="."]
+material = SubResource("ShaderMaterial_dl2ic")
 offset_left = 1025.0
 offset_top = 25.0
 offset_right = 1540.0
@@ -163,6 +209,7 @@ patch_margin_right = 6
 patch_margin_bottom = 6
 
 [node name="NinePatchRect7" type="NinePatchRect" parent="."]
+material = SubResource("ShaderMaterial_uxfqh")
 offset_left = 633.0
 offset_top = 481.0
 offset_right = 899.0
@@ -196,6 +243,7 @@ patch_margin_right = 6
 patch_margin_bottom = 6
 
 [node name="NinePatchRect5" type="NinePatchRect" parent="."]
+material = SubResource("ShaderMaterial_acwbt")
 offset_left = 630.0
 offset_top = 174.0
 offset_right = 1011.0
@@ -269,6 +317,7 @@ patch_margin_right = 6
 patch_margin_bottom = 6
 
 [node name="NinePatchRect5" type="NinePatchRect" parent="NinePatchRect2"]
+layout_mode = 0
 offset_left = 25.0
 offset_top = 123.0
 offset_right = 155.0
@@ -280,6 +329,7 @@ patch_margin_right = 6
 patch_margin_bottom = 6
 
 [node name="NinePatchRect6" type="NinePatchRect" parent="NinePatchRect2"]
+layout_mode = 0
 offset_left = 236.0
 offset_top = 11.0
 offset_right = 529.0
@@ -297,3 +347,6 @@ offset_right = 372.0
 offset_bottom = 225.0
 text = "Music Sheet"
 label_settings = SubResource("LabelSettings_wvm28")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_n1348")
