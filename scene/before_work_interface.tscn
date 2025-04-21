@@ -81,6 +81,7 @@ offset_bottom = 71.0
 text = "用户动态"
 
 [node name="Label3" type="Label" parent="NinePatchRect2/NinePatchRect2"]
+layout_mode = 0
 offset_left = 13.0
 offset_top = 66.0
 offset_right = 77.0
@@ -130,6 +131,7 @@ scale = Vector2(0.140534, 0.133165)
 texture = ExtResource("4_e7thc")
 
 [node name="Label2" type="Label" parent="NinePatchRect/NinePatchRect"]
+layout_mode = 0
 offset_left = 126.0
 offset_top = 155.5
 offset_right = 257.0
