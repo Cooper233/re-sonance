@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://d0wldfh2ub11w" path="res://res/img/UI/user_panel.png" id="2_0uu3y"]
 [ext_resource type="Texture2D" uid="uid://bi62m4x1u30hj" path="res://res/img/UI/dayinfo_panel.png" id="2_8rp1r"]
+[ext_resource type="PackedScene" uid="uid://by8s1j17lphdw" path="res://scene/ui/BeforeWork/userSlot.tscn" id="2_yy8h8"]
 [ext_resource type="Texture2D" uid="uid://dsbpgrrrklcyb" path="res://res/img/UI/user_info_panel.png" id="3_am743"]
 [ext_resource type="Texture2D" uid="uid://ditkka0me2m3t" path="res://res/img/UI/start_button.png" id="4_l0u4t"]
 [ext_resource type="Texture2D" uid="uid://3bnxs16d8x7p" path="res://res/img/UI/message_panel.png" id="5_6m8d2"]
@@ -76,6 +77,7 @@ offset_right = 1593.0
 offset_bottom = 897.0
 texture = ExtResource("4_l0u4t")
 
+<<<<<<< HEAD
 [node name="Panel" parent="." instance=ExtResource("6_h8xn5")]
 layout_mode = 0
 anchors_preset = 0
@@ -87,3 +89,11 @@ offset_left = 143.0
 offset_top = 167.0
 offset_right = 535.0
 offset_bottom = 635.0
+=======
+[node name="UserSlot" parent="." instance=ExtResource("2_yy8h8")]
+layout_mode = 1
+offset_left = 162.0
+offset_top = 262.0
+offset_right = -1123.0
+offset_bottom = -512.0
+>>>>>>> 7e25baddd560f52b545053faecd186fc688931a0
