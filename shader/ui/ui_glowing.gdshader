@@ -19,6 +19,6 @@ void fragment() {
 	outline.rgb=glowingColor.rgb;
 	
 	vec4 origin=texture(TEXTURE,uv);
-	COLOR=mix(origin,outline,origin.a);
+	COLOR=mix(origin,outline,origin.a==0.0?1.0:0.0);
 	
 }

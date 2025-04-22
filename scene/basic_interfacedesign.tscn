@@ -79,7 +79,7 @@ void fragment() {
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_7g171"]
 shader = SubResource("Shader_uwdot")
-shader_parameter/glowingColor = Color(10, 0, 10, 1)
+shader_parameter/glowingColor = Color(4.33726, 0, 10, 1)
 shader_parameter/outline_lenth = 1.0
 
 [sub_resource type="LabelSettings" id="LabelSettings_wvm28"]
@@ -90,7 +90,8 @@ font_color = Color(0, 0, 0, 1)
 [sub_resource type="Environment" id="Environment_n1348"]
 background_mode = 3
 glow_enabled = true
-glow_strength = 0.8
+glow_intensity = 1.21
+glow_strength = 0.74
 glow_bloom = 0.11
 
 [node name="BasicInterface" type="Node2D"]

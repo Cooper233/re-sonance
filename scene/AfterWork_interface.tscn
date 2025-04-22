@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://dd8cccax2ka8e"]
 
-[ext_resource type="Texture2D" uid="uid://j71aiddncfk2" path="res://res/img/background/bg-after.jpg" id="1_ktnel"]
+[ext_resource type="Texture2D" uid="uid://cqoiknrvls0mb" path="res://res/img/background/喝茶镜头.png" id="1_uakc5"]
 [ext_resource type="Texture2D" uid="uid://cfys7ecm2vite" path="res://res/img/UI/blue_button13.png" id="1_xet3m"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_u2h41"]
@@ -8,10 +8,9 @@ font_color = Color(0, 0, 0, 1)
 
 [node name="AfterWorkInterface" type="Node2D"]
 
-[node name="Bg-after" type="Sprite2D" parent="."]
-position = Vector2(776, 450)
-scale = Vector2(1.12403, 1.12403)
-texture = ExtResource("1_ktnel")
+[node name="喝茶镜头" type="Sprite2D" parent="."]
+position = Vector2(798, 451)
+texture = ExtResource("1_uakc5")
 
 [node name="BlueButton13" type="Sprite2D" parent="."]
 position = Vector2(786, 865.5)
