@@ -1,14 +1,13 @@
-extends Node2D
+extends Control
 
-const  AWI=preload("res://scene/ui/before_work.tscn");
+var personId:String
 
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	InfoManager.LoadResouces()
-	var awi=AWI.instantiate();
-	$ui.add_child(awi);
-
+	if personId!=null:
+		var pi=InfoManager.getPersonInstance(personId);
+		$container/viewport/panel/avatar.texture=ResourceManager.getAvatar(pi);
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
