@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://dbc7utsq4f5uh"]
+
+[ext_resource type="Script" path="res://scene/ui/workingFX/fx_smallPieces.gd" id="1_ybbah"]
+[ext_resource type="Texture2D" uid="uid://vri1o2k8jaee" path="res://res/img/background/working/bg_pieces_back.png" id="2_b5xcy"]
+
+[node name="FxSmallPieces" type="Node2D"]
+script = ExtResource("1_ybbah")
+
+[node name="piece" type="Sprite2D" parent="."]
+texture = ExtResource("2_b5xcy")
