@@ -1,0 +1,41 @@
+[gd_scene load_steps=4 format=3 uid="uid://bj02r54yjc5he"]
+
+[ext_resource type="Script" path="res://scripts/slide/ScrollContainer.gd" id="1_2j0lk"]
+[ext_resource type="Texture2D" uid="uid://0ab2nkrwxbh3" path="res://res/img/UI/ASf题-1.png" id="2_r3g1c"]
+[ext_resource type="Texture2D" uid="uid://cq4205oy7ky6y" path="res://res/img/UI/fafafa-1.png" id="3_akktq"]
+
+[node name="control" type="Container"]
+offset_right = 270.0
+offset_bottom = 70.0
+
+[node name="GridContainer" type="GridContainer" parent="."]
+layout_mode = 2
+
+[node name="ScrollContainer" type="ScrollContainer" parent="GridContainer"]
+custom_minimum_size = Vector2(409, 368)
+layout_mode = 2
+script = ExtResource("1_2j0lk")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="GridContainer/ScrollContainer"]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="GridContainer/ScrollContainer/HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("2_r3g1c")
+
+[node name="TextureRect2" type="TextureRect" parent="GridContainer/ScrollContainer/HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("3_akktq")
+
+[node name="Label" type="Label" parent="GridContainer/ScrollContainer/HBoxContainer/TextureRect2"]
+layout_mode = 1
+anchors_preset = -1
+offset_right = 336.0
+offset_bottom = 324.0
+text = "这是一串消息
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="mouse_entered" from="GridContainer/ScrollContainer" to="GridContainer/ScrollContainer" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="GridContainer/ScrollContainer" to="GridContainer/ScrollContainer" method="_on_mouse_exited"]

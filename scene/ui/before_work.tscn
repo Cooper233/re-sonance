@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://dynhj60lo40tq"]
+[gd_scene load_steps=9 format=3 uid="uid://dynhj60lo40tq"]
 
 [ext_resource type="Texture2D" uid="uid://dneq2513tpvfn" path="res://res/img/UI/title.png" id="1_5niag"]
 [ext_resource type="Texture2D" uid="uid://d0wldfh2ub11w" path="res://res/img/UI/user_panel.png" id="2_0uu3y"]
@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://dsbpgrrrklcyb" path="res://res/img/UI/user_info_panel.png" id="3_am743"]
 [ext_resource type="Texture2D" uid="uid://ditkka0me2m3t" path="res://res/img/UI/start_button.png" id="4_l0u4t"]
 [ext_resource type="Texture2D" uid="uid://3bnxs16d8x7p" path="res://res/img/UI/message_panel.png" id="5_6m8d2"]
+[ext_resource type="PackedScene" uid="uid://bj02r54yjc5he" path="res://scene/ui/panel_container.tscn" id="8_3aktm"]
 
 [node name="BeforeWork" type="Control"]
 layout_mode = 3
@@ -48,9 +49,17 @@ position = Vector2(862, 599)
 texture = ExtResource("3_am743")
 
 [node name="MessagePanel" type="Sprite2D" parent="."]
-position = Vector2(1512, 469)
+visible = false
+position = Vector2(1374, 480)
 texture = ExtResource("5_6m8d2")
 
 [node name="StartButton" type="Sprite2D" parent="."]
 position = Vector2(1376, 772)
 texture = ExtResource("4_l0u4t")
+
+[node name="PanelContainer" parent="." instance=ExtResource("8_3aktm")]
+layout_mode = 0
+offset_left = 1212.0
+offset_top = 323.0
+offset_right = 1712.0
+offset_bottom = 647.0
