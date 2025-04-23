@@ -10,4 +10,6 @@ script = ExtResource("1_wvbsw")
 position = Vector2(800, 450)
 texture = ExtResource("1_st2a0")
 
+[node name="bg_fx" type="Node2D" parent="."]
+
 [node name="ui" type="Node" parent="."]

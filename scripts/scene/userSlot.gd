@@ -5,7 +5,7 @@ var personId:String
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	if personId!=null:
+	if personId!="":
 		var pi=InfoManager.getPersonInstance(personId);
 		$container/viewport/panel/avatar.texture=ResourceManager.getAvatar(pi);
 

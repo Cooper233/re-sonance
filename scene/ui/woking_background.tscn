@@ -1,0 +1,133 @@
+[gd_scene load_steps=7 format=3 uid="uid://dsb5onvqqp677"]
+
+[ext_resource type="Texture2D" uid="uid://b567kqxumv14l" path="res://res/img/background/working/bg_back.png" id="1_g0qiv"]
+[ext_resource type="PackedScene" uid="uid://dbc7utsq4f5uh" path="res://scene/ui/workingFX/fx_smallPieces.tscn" id="2_qm61v"]
+[ext_resource type="Texture2D" uid="uid://dm7v7r3sb8kyf" path="res://res/img/background/working/bg_mid.png" id="2_r18qu"]
+[ext_resource type="Texture2D" uid="uid://bjya1shk57lb5" path="res://res/img/background/working/bg_front.png" id="3_70w5y"]
+[ext_resource type="Texture2D" uid="uid://b2kx1gd1sg2eb" path="res://res/img/background/working/bg_pieces_front1.png" id="4_xy51f"]
+[ext_resource type="Texture2D" uid="uid://dcxum0gfogrf0" path="res://res/img/background/working/bg_pieces_front_b1.png" id="5_eyp87"]
+
+[node name="WokingBackground" type="Node2D"]
+
+[node name="BgBack" type="Sprite2D" parent="."]
+position = Vector2(800, 450)
+texture = ExtResource("1_g0qiv")
+
+[node name="back" type="Node2D" parent="."]
+
+[node name="FxSmallPieces" parent="back" instance=ExtResource("2_qm61v")]
+position = Vector2(256, 600)
+randomSpeed = true
+
+[node name="FxSmallPieces2" parent="back" instance=ExtResource("2_qm61v")]
+position = Vector2(390, 370)
+rotation = 0.649566
+randomSpeed = true
+
+[node name="FxSmallPieces3" parent="back" instance=ExtResource("2_qm61v")]
+position = Vector2(683, 660)
+rotation = 0.267104
+randomSpeed = true
+
+[node name="FxSmallPieces4" parent="back" instance=ExtResource("2_qm61v")]
+position = Vector2(591, 458)
+rotation = 0.267104
+scale = Vector2(1.3366, 1.86346)
+randomSpeed = true
+
+[node name="FxSmallPieces5" parent="back" instance=ExtResource("2_qm61v")]
+position = Vector2(903, 413)
+rotation = 0.267104
+randomSpeed = true
+
+[node name="FxSmallPieces6" parent="back" instance=ExtResource("2_qm61v")]
+position = Vector2(731, 182)
+rotation = -2.78388
+randomSpeed = true
+
+[node name="FxSmallPieces7" parent="back" instance=ExtResource("2_qm61v")]
+position = Vector2(997, 564)
+rotation = 0.267104
+
+[node name="FxSmallPieces8" parent="back" instance=ExtResource("2_qm61v")]
+position = Vector2(788, 851)
+rotation = 0.267104
+randomSpeed = true
+
+[node name="FxSmallPieces9" parent="back" instance=ExtResource("2_qm61v")]
+position = Vector2(20, 460)
+rotation = 0.267104
+randomSpeed = true
+
+[node name="FxSmallPieces10" parent="back" instance=ExtResource("2_qm61v")]
+position = Vector2(248, 157)
+rotation = 0.453031
+randomSpeed = true
+
+[node name="FxSmallPieces11" parent="back" instance=ExtResource("2_qm61v")]
+position = Vector2(1229, 200)
+rotation = 0.267104
+randomSpeed = true
+
+[node name="BgMid" type="Sprite2D" parent="."]
+position = Vector2(800, 450)
+texture = ExtResource("2_r18qu")
+
+[node name="front" type="Node2D" parent="."]
+
+[node name="FxSmallPieces" parent="front" instance=ExtResource("2_qm61v")]
+position = Vector2(1070, 432)
+texture = ExtResource("4_xy51f")
+dura = 30
+speed = 12
+
+[node name="FxSmallPieces2" parent="front" instance=ExtResource("2_qm61v")]
+position = Vector2(728, 295)
+rotation = 0.38803
+texture = ExtResource("4_xy51f")
+dura = 30
+speed = 7
+
+[node name="FxSmallPieces3" parent="front" instance=ExtResource("2_qm61v")]
+position = Vector2(350, 703)
+rotation = 0.38803
+texture = ExtResource("4_xy51f")
+dura = 30
+speed = 6
+
+[node name="FxSmallPieces4" parent="front" instance=ExtResource("2_qm61v")]
+position = Vector2(1195, 753)
+rotation = -0.263005
+texture = ExtResource("4_xy51f")
+dura = 30
+speed = 6
+
+[node name="FxSmallPieces5" parent="front" instance=ExtResource("2_qm61v")]
+position = Vector2(218, 391)
+rotation = -0.622446
+scale = Vector2(1, 3.4595)
+texture = ExtResource("5_eyp87")
+dura = 50
+speed = 5
+k = 2.0
+
+[node name="FxSmallPieces6" parent="front" instance=ExtResource("2_qm61v")]
+position = Vector2(550, 529)
+rotation = 0.294616
+scale = Vector2(2.14271, 3.55204)
+texture = ExtResource("5_eyp87")
+dura = 50
+speed = 5
+k = -0.3
+
+[node name="FxSmallPieces7" parent="front" instance=ExtResource("2_qm61v")]
+position = Vector2(284, 553)
+rotation = 0.0734134
+texture = ExtResource("5_eyp87")
+dura = 50
+speed = 5
+k = -0.6
+
+[node name="BgFront" type="Sprite2D" parent="."]
+position = Vector2(800, 450)
+texture = ExtResource("3_70w5y")

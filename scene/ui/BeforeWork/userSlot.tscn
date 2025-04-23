@@ -6,13 +6,6 @@
 [ext_resource type="Texture2D" uid="uid://dcb3d1mbj337r" path="res://res/img/avatar/static_jibao.png" id="3_5im8o"]
 [ext_resource type="Texture2D" uid="uid://c4qclasucy20p" path="res://res/img/UI/白 半透.png" id="3_8tn6i"]
 
-[sub_resource type="Environment" id="Environment_6u8d0"]
-background_mode = 3
-glow_enabled = true
-glow_intensity = 2.17
-glow_strength = 1.11
-glow_bloom = 0.09
-
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_r2ra2"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_2lk4d"]
@@ -20,26 +13,31 @@ shader = ExtResource("1_3hv7f")
 shader_parameter/glowingColor = Color(10, 10, 10, 0.616)
 shader_parameter/outline_lenth = 2.0
 
+[sub_resource type="Environment" id="Environment_6u8d0"]
+background_mode = 3
+glow_enabled = true
+glow_intensity = 2.17
+glow_strength = 1.11
+glow_bloom = 0.09
+
 [node name="UserSlot" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_right = -1285.0
-offset_bottom = -774.0
+offset_right = -1170.0
+offset_bottom = -761.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_u0hy7")
 
-[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
-environment = SubResource("Environment_6u8d0")
-
 [node name="TextureRect" type="TextureRect" parent="."]
 material = SubResource("ShaderMaterial_r2ra2")
-offset_left = 89.0
-offset_top = 25.0
-offset_right = 329.0
-offset_bottom = 125.0
+layout_mode = 0
+offset_left = 66.0
+offset_top = 20.0
+offset_right = 425.0
+offset_bottom = 119.0
 texture = ExtResource("2_7vtqh")
 
 [node name="container" type="SubViewportContainer" parent="."]
@@ -64,3 +62,13 @@ texture = ExtResource("3_8tn6i")
 [node name="avatar" type="Sprite2D" parent="container/viewport/panel"]
 scale = Vector2(0.925926, 0.925926)
 texture = ExtResource("3_5im8o")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_6u8d0")
+
+[node name="select" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = -17.0
+offset_top = -11.0
+offset_right = 465.0
+offset_bottom = 140.0
