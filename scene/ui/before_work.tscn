@@ -59,7 +59,7 @@ texture = ExtResource("4_l0u4t")
 
 [node name="PanelContainer" parent="." instance=ExtResource("8_3aktm")]
 layout_mode = 0
-offset_left = 1212.0
+offset_left = 1259.0
 offset_top = 323.0
-offset_right = 1712.0
+offset_right = 1759.0
 offset_bottom = 647.0
