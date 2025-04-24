@@ -46,7 +46,7 @@ offset_bottom = -17.0
 
 [node name="control" parent="." instance=ExtResource("8_bwh7y")]
 layout_mode = 0
-offset_left = 1250.0
-offset_top = 400.0
-offset_right = 1520.0
-offset_bottom = 470.0
+offset_left = 1496.0
+offset_top = 320.0
+offset_right = 1834.0
+offset_bottom = 638.0
