@@ -1,12 +1,13 @@
-[gd_scene load_steps=8 format=3 uid="uid://dynhj60lo40tq"]
+[gd_scene load_steps=9 format=3 uid="uid://dynhj60lo40tq"]
 
 [ext_resource type="Texture2D" uid="uid://dneq2513tpvfn" path="res://res/img/UI/title.png" id="1_5niag"]
-[ext_resource type="Texture2D" uid="uid://d0wldfh2ub11w" path="res://res/img/UI/user_panel.png" id="2_0uu3y"]
+[ext_resource type="Script" path="res://scene/ui/before_work.gd" id="1_36h2q"]
 [ext_resource type="Texture2D" uid="uid://bi62m4x1u30hj" path="res://res/img/UI/dayinfo_panel.png" id="2_8rp1r"]
 [ext_resource type="Texture2D" uid="uid://c3imohyeijxu2" path="res://res/img/UI/options_button.png" id="2_w61vb"]
-[ext_resource type="Texture2D" uid="uid://dsbpgrrrklcyb" path="res://res/img/UI/user_info_panel.png" id="3_am743"]
 [ext_resource type="Texture2D" uid="uid://ditkka0me2m3t" path="res://res/img/UI/start_button.png" id="4_l0u4t"]
 [ext_resource type="Texture2D" uid="uid://3bnxs16d8x7p" path="res://res/img/UI/message_panel.png" id="5_6m8d2"]
+[ext_resource type="PackedScene" uid="uid://ce1s8hlb65mnr" path="res://scene/ui/BeforeWork/userSelectPanel.tscn" id="7_ilela"]
+[ext_resource type="PackedScene" uid="uid://c7pdnedv1773q" path="res://scene/ui/BeforeWork/userInfoPanel.tscn" id="8_v33lt"]
 
 [node name="BeforeWork" type="Control"]
 layout_mode = 3
@@ -15,6 +16,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_36h2q")
 
 [node name="Title" type="Sprite2D" parent="."]
 position = Vector2(800, 55)
@@ -24,28 +26,9 @@ texture = ExtResource("1_5niag")
 position = Vector2(130, 60)
 texture = ExtResource("2_w61vb")
 
-[node name="UserPanel" type="Sprite2D" parent="."]
-position = Vector2(296, 493)
-texture = ExtResource("2_0uu3y")
-
-[node name="ScrollContainer" type="ScrollContainer" parent="UserPanel"]
-offset_left = -243.0
-offset_top = -282.0
-offset_right = 240.0
-offset_bottom = 364.0
-horizontal_scroll_mode = 0
-vertical_scroll_mode = 2
-
-[node name="VBoxContainer" type="VBoxContainer" parent="UserPanel/ScrollContainer"]
-layout_mode = 2
-
 [node name="DayinfoPanel" type="Sprite2D" parent="."]
 position = Vector2(1079, 194)
 texture = ExtResource("2_8rp1r")
-
-[node name="UserInfoPanel" type="Sprite2D" parent="."]
-position = Vector2(862, 599)
-texture = ExtResource("3_am743")
 
 [node name="MessagePanel" type="Sprite2D" parent="."]
 position = Vector2(1512, 469)
@@ -54,3 +37,13 @@ texture = ExtResource("5_6m8d2")
 [node name="StartButton" type="Sprite2D" parent="."]
 position = Vector2(1376, 772)
 texture = ExtResource("4_l0u4t")
+
+[node name="UserSelectPanel" parent="." instance=ExtResource("7_ilela")]
+layout_mode = 1
+
+[node name="UserInfoPanel" parent="." instance=ExtResource("8_v33lt")]
+layout_mode = 1
+offset_left = 591.0
+offset_top = 317.0
+offset_right = -455.0
+offset_bottom = -17.0

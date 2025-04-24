@@ -1,3 +1,5 @@
 class_name ResourceManager
 static func getAvatar(person:PersonInstance):
-	return load("res://res/img/avatar/"+person.avatar);
+	var loc=str("res://res/img/avatar/",person.avatar+".png");
+	var text=load(loc);
+	return text

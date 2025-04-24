@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://by8s1j17lphdw"]
+[gd_scene load_steps=10 format=3 uid="uid://by8s1j17lphdw"]
 
 [ext_resource type="Shader" path="res://shader/ui/ui_glowing.gdshader" id="1_3hv7f"]
 [ext_resource type="Script" path="res://scripts/scene/userSlot.gd" id="1_u0hy7"]
@@ -8,16 +8,22 @@
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_r2ra2"]
 
+[sub_resource type="LabelSettings" id="LabelSettings_5pysl"]
+font_size = 32
+shadow_size = 3
+shadow_color = Color(0, 0, 0, 1)
+shadow_offset = Vector2(2, 2)
+
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_2lk4d"]
 shader = ExtResource("1_3hv7f")
-shader_parameter/glowingColor = Color(10, 10, 10, 0.616)
+shader_parameter/glowingColor = Color(15.9765, 28.4784, 30, 0.309804)
 shader_parameter/outline_lenth = 2.0
 
 [sub_resource type="Environment" id="Environment_6u8d0"]
 background_mode = 3
 glow_enabled = true
 glow_intensity = 2.17
-glow_strength = 1.11
+glow_strength = 0.76
 glow_bloom = 0.09
 
 [node name="UserSlot" type="Control"]
@@ -26,19 +32,28 @@ anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 offset_right = -1170.0
-offset_bottom = -761.0
+offset_bottom = -760.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_u0hy7")
 
-[node name="TextureRect" type="TextureRect" parent="."]
+[node name="panel" type="TextureRect" parent="."]
 material = SubResource("ShaderMaterial_r2ra2")
 layout_mode = 0
-offset_left = 66.0
-offset_top = 20.0
-offset_right = 425.0
-offset_bottom = 119.0
+offset_left = 59.0
+offset_top = 7.0
+offset_right = 450.0
+offset_bottom = 127.0
 texture = ExtResource("2_7vtqh")
+
+[node name="username" type="Label" parent="panel"]
+layout_mode = 0
+offset_left = 55.0
+offset_top = 8.0
+offset_right = 339.0
+offset_bottom = 71.0
+text = "USER_NAME"
+label_settings = SubResource("LabelSettings_5pysl")
 
 [node name="container" type="SubViewportContainer" parent="."]
 material = SubResource("ShaderMaterial_2lk4d")

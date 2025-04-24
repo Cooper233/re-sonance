@@ -1,0 +1,29 @@
+[gd_scene load_steps=3 format=3 uid="uid://ce1s8hlb65mnr"]
+
+[ext_resource type="Script" path="res://scene/ui/BeforeWork/userSelectPanel.gd" id="1_u74d5"]
+[ext_resource type="Texture2D" uid="uid://d0wldfh2ub11w" path="res://res/img/UI/user_panel.png" id="2_e3c1v"]
+
+[node name="UserSelectPanel" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -1020.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_u74d5")
+
+[node name="panel" type="Sprite2D" parent="."]
+position = Vector2(296, 493)
+texture = ExtResource("2_e3c1v")
+
+[node name="sc" type="ScrollContainer" parent="panel"]
+offset_left = -243.0
+offset_top = -282.0
+offset_right = 240.0
+offset_bottom = 364.0
+horizontal_scroll_mode = 0
+vertical_scroll_mode = 2
+
+[node name="vbc" type="VBoxContainer" parent="panel/sc"]
+layout_mode = 2
