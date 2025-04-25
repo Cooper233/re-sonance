@@ -4,6 +4,12 @@ static var dataLoadedFlag=false
 static var staticPersons:Dictionary
 static var personInstances:Dictionary
 static var playerData:PlayerDataInstance
+static var tagData:Dictionary
+
+
+static var l1Tags:Array
+static var l2Tags:Dictionary
+static var speTags:Array
 
 static func LoadResouces():
 	if(dataLoadedFlag):
@@ -24,7 +30,28 @@ static func LoadResouces():
 			else:
 				print("文件"+file_name+"读取失败")
 			file_name=dir.get_next()
-	
+	loc="res://res/data/tag/";
+	dir=DirAccess.open(loc);
+	if dir:
+		dir.list_dir_begin();
+		var file_name=dir.get_next()
+		while file_name!="":
+			var data=FileAccess.open(str(loc,file_name),FileAccess.READ)
+			var json=JSON.parse_string(data.get_as_text())
+			var tmp=TagBase.new();
+			if json is Dictionary:
+				tmp.init(json);
+				registerTagBase(tmp);
+				print("TAG-"+tmp.name+"读取完成");
+			elif json is Array:
+				for i in json:
+					tmp=TagBase.new();
+					tmp.init(i);
+					registerTagBase(tmp);
+					print("TAG-"+tmp.name+"读取完成");
+			else:
+				print("文件"+file_name+"读取失败")
+			file_name=dir.get_next()
 	
 	
 	dataLoadedFlag=true;
@@ -38,8 +65,27 @@ static func DEBUG():
 		tmp.loadFromStatic(getStaticPerson(i));
 		registerPersonInstance(tmp);
 static func getStaticPerson(id:String)->StaticPersonBase:
+	LoadResouces()
 	return staticPersons[id]
 static func getPersonInstance(id:String)->PersonInstance:
+	LoadResouces()
 	return personInstances[id];
 static func registerPersonInstance(pi:PersonInstance):
 	personInstances[pi.id]=pi;
+static func registerTagBase(tag:TagBase):
+	if tag.father=="":
+		if tag.isSpecial:
+			speTags.append(tag.id);
+		else:
+			l1Tags.append(tag.id);
+	else:
+		var tmp:Array
+		if !l2Tags.has(tag.father):
+			l2Tags[tag.father]=tmp;
+		else:
+			tmp=l2Tags[tag.father];
+		tmp.append(tag.id);
+	tagData[tag.id]=tag;
+static func getTagData(id:String)->TagBase:
+	LoadResouces()
+	return tagData[id];

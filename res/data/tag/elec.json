@@ -1,0 +1,18 @@
+[
+    {
+        "id":"elec",
+        "name":"电子音乐"
+    },{
+        "id":"elec_syn",
+        "name":"合成器",
+        "father":"elec"
+    },{
+        "id":"elec_synwave",
+        "name":"合成器浪潮",
+        "father":"elec"
+    },{
+        "id":"elec_edm",
+        "name":"EDM",
+        "father":"elec"
+    }
+]

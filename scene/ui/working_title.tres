@@ -1,0 +1,9 @@
+[gd_resource type="LabelSettings" load_steps=2 format=3 uid="uid://c44kw5puq8sk5"]
+
+[ext_resource type="FontFile" uid="uid://hskocwikmvki" path="res://res/fonts/SanJiYingLangHeiJianTi-ZhongCu-2.ttf" id="1_x7e61"]
+
+[resource]
+font = ExtResource("1_x7e61")
+font_size = 40
+shadow_color = Color(0, 0, 0, 1)
+shadow_offset = Vector2(2, 2)
