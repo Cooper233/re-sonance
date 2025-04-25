@@ -1,6 +1,8 @@
-[gd_scene load_steps=8 format=3 uid="uid://c7pdnedv1773q"]
+[gd_scene load_steps=10 format=3 uid="uid://c7pdnedv1773q"]
 
 [ext_resource type="Texture2D" uid="uid://dsbpgrrrklcyb" path="res://res/img/UI/user_info_panel.png" id="1_10vcv"]
+[ext_resource type="Script" path="res://scripts/slide/userInfoPanel.gd" id="1_o8a64"]
+[ext_resource type="PackedScene" uid="uid://joccdbmjel3s" path="res://scene/ui/face_1.tscn" id="2_gxith"]
 [ext_resource type="Texture2D" uid="uid://dtqanytm0bvuy" path="res://res/img/UI/info_info_normal.png" id="2_vdmca"]
 [ext_resource type="Texture2D" uid="uid://dloxqimoc3m03" path="res://res/img/UI/info_info_selected.png" id="3_0o0x0"]
 [ext_resource type="Texture2D" uid="uid://sbjsgtoyd67t" path="res://res/img/UI/info_recent_normal.png" id="4_r1ljp"]
@@ -17,6 +19,8 @@ offset_right = -1046.0
 offset_bottom = -334.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_o8a64")
+face1 = ExtResource("2_gxith")
 
 [node name="UserInfoPanel" type="Sprite2D" parent="."]
 position = Vector2(288, 296)
@@ -50,3 +54,7 @@ offset_right = 583.0
 offset_bottom = 61.0
 texture_normal = ExtResource("6_jnrby")
 texture_pressed = ExtResource("7_xe5f7")
+
+[connection signal="gui_input" from="InfoButton" to="." method="_on_info_button_gui_input"]
+[connection signal="gui_input" from="RecentButton" to="." method="_on_recent_button_gui_input"]
+[connection signal="gui_input" from="SNSButton" to="." method="_on_sns_button_gui_input"]
