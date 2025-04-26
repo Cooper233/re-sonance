@@ -1,0 +1,10 @@
+[
+    {
+        "id":"metal",
+        "name":"金属"
+    },{
+        "id":"metal_Heavymetal",
+        "name":"重金属",
+        "father":"metal"
+    }
+]

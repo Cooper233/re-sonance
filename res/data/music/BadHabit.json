@@ -1,0 +1,21 @@
+[
+    {
+        "id":"madeamov_fever",
+        "name":"Fever",
+        "singer":["Bad Habit"],
+        "album":"Made a move",
+        "tag":["r&b","r&b_contemporaryr&b","english"]
+    },{
+        "id":"madeamov_smilebaby",
+        "name":"smilebaby",
+        "singer":["Bad Habit"],
+        "album":"Made a move",
+        "tag":["r&b","r&b_contemporaryr&b","english"]
+    },{
+        "id":"madeamov_no_deadbeat",
+        "name":"No Deadbeat",
+        "singer":["Bad Habit"],
+        "album":"Made a move",
+        "tag":["r&b","r&b_contemporaryr&b","english"]
+    }
+]

@@ -1,0 +1,34 @@
+[
+    {
+        "id":"popular",
+        "name":"流行音乐"
+    },{
+        "id":"popular_lovesong",
+        "name":"情歌",
+        "father":"popular"
+    },{
+        "id":"popular_chinesepop",
+        "name":"华语流行",
+        "father":"popular"
+    },{
+        "id":"popular_electronicpop",
+        "name":"电子流行",
+        "father":"popular"
+    },{
+        "id":"popular_dancepop",
+        "name":"流行舞曲",
+        "father":"popular"
+    },{
+        "id":"popular_lyricalpop",
+        "name":"抒情流行",
+        "father":"popular"
+    },{
+        "id":"popular_lightrockpop",
+        "name":"轻摇滚流行",
+        "father":"popular"
+    },{
+        "id":"popular_atmospherepop",
+        "name":"氛围流行",
+        "father":"popular"
+    }
+]

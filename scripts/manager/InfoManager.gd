@@ -5,6 +5,7 @@ static var staticPersons:Dictionary
 static var personInstances:Dictionary
 static var playerData:PlayerDataInstance
 static var tagData:Dictionary
+static var songData:Dictionary	
 
 
 static var l1Tags:Array
@@ -30,6 +31,11 @@ static func LoadResouces():
 			else:
 				print("文件"+file_name+"读取失败")
 			file_name=dir.get_next()
+	var tspe=TagBase.new();
+	tspe.id="special";
+	tspe.name="特殊标签";
+	#tagData[tspe.id]=tspe;
+	registerTagBase(tspe);
 	loc="res://res/data/tag/";
 	dir=DirAccess.open(loc);
 	if dir:
@@ -52,7 +58,27 @@ static func LoadResouces():
 			else:
 				print("文件"+file_name+"读取失败")
 			file_name=dir.get_next()
-	
+	loc="res://res/data/music/"
+	dir=DirAccess.open(loc)
+	if dir:
+		dir.list_dir_begin();
+		var file_name=dir.get_next()
+		while file_name!="":
+			var data=FileAccess.open(str(loc,file_name),FileAccess.READ)
+			var json=JSON.parse_string(data.get_as_text())
+			var tmp=MusicBase.new();
+			if json is Dictionary:
+				tmp.init(json);
+				registerSongBase(tmp);
+				print("SONG-"+tmp.name+"读取完成");
+			elif json is Array:
+				for i in json:
+					tmp=MusicBase.new();
+					tmp.init(i);
+					registerSongBase(tmp);
+					print("SONG-"+tmp.name+"读取完成");
+			file_name=dir.get_next()
+			
 	
 	dataLoadedFlag=true;
 	
@@ -72,9 +98,12 @@ static func getPersonInstance(id:String)->PersonInstance:
 	return personInstances[id];
 static func registerPersonInstance(pi:PersonInstance):
 	personInstances[pi.id]=pi;
+static func registerSongBase(song:MusicBase):
+	songData[song.id]=song;
 static func registerTagBase(tag:TagBase):
 	if tag.father=="":
 		if tag.isSpecial:
+			tag.father="special"
 			speTags.append(tag.id);
 		else:
 			l1Tags.append(tag.id);
@@ -89,3 +118,6 @@ static func registerTagBase(tag:TagBase):
 static func getTagData(id:String)->TagBase:
 	LoadResouces()
 	return tagData[id];
+static func getSongData(id:String)->MusicBase:
+	LoadResouces()
+	return songData[id];

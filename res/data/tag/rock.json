@@ -1,0 +1,30 @@
+[
+    {
+        "id":"rock",
+        "name":"摇滚音乐"
+    },{
+        "id":"rock_Spacerock",
+        "name":"太空摇滚",
+        "father":"rock"
+    },{
+        "id":"rock_Postmodernrock",
+        "name":"后现代摇滚",
+        "father":"rock"
+    },{
+        "id":"rock_Progressiverock",
+        "name":"前卫摇滚",
+        "father":"rock"
+    },{
+        "id":"rock_Alternativerock",
+        "name":"另类摇滚",
+        "father":"rock"
+    },{
+        "id":"rock_Psychedelicrock",
+        "name":"迷幻摇滚",
+        "father":"rock"
+    },{
+        "id":"rock_Experimentalrock",
+        "name":"实验摇滚",
+        "father":"rock"
+    }
+]

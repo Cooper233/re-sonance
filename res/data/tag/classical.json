@@ -1,0 +1,18 @@
+[
+    {
+        "id":"classical",
+        "name":"古典音乐"
+    },{
+        "id":"classical_piano",
+        "name":"钢琴曲",
+        "father":"classical"
+    },{
+        "id":"classical_Neoclassical",
+        "name":"新古典音乐",
+        "father":"classical"
+    },{
+        "id":"classical_jazz",
+        "name":"爵士乐",
+        "father":"classical"
+    }
+]

@@ -12,8 +12,8 @@ func _input(event):
 				
 func _on_left_click():
 	#TagGlobalSignal.emit_signal("TagDisplayButtonDown",0);
-	$"../.."._on_button_pressed(0)
+	$".."._on_button_pressed(0)
 
 func _on_right_click():
 	#TagGlobalSignal.emit_signal("TagDisplayButtonDown",1);
-	$"../.."._on_button_pressed(1)
+	$".."._on_button_pressed(1)

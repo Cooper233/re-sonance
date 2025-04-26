@@ -14,5 +14,17 @@
         "id":"elec_edm",
         "name":"EDM",
         "father":"elec"
+    },{
+        "id":"elec_glitch",
+        "name":"故障音乐",
+        "father":"elec"
+    },{
+        "id":"elec_phonk",
+        "name":"Phonk",
+        "father":"elec"
+    },{
+        "id":"elec_synthpop",
+        "name":"电子合成器",
+        "father":"elec"
     }
 ]

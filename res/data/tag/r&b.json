@@ -1,0 +1,10 @@
+[
+    {
+        "id":"r&b",
+        "name":"R&B"
+    },{
+        "id":"r&b_contemporaryr&b",
+        "name":"当代R&B",
+        "father":"r&b"
+    }
+]

@@ -10,6 +10,7 @@ font = ExtResource("1_gp855")
 shadow_color = Color(0, 0, 0, 1)
 
 [node name="TagDisplay" type="Control"]
+custom_minimum_size = Vector2(0, 30)
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0

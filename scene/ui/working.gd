@@ -12,8 +12,14 @@ func _ready():
 	
 	playerData=InfoManager.playerData
 	$DayPanel/day.text=str("DAY\n",playerData.day)
+	
+	$workingUserPanel.setPersonList(InfoManager.personInstances.keys())
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
+var tarpos;
 func _process(delta):
-	pass
+	var mp=get_global_mouse_position();
+	var size=$".".size;
+	tarpos=-(mp-size/2)*0.05;
+	$".".position+=(lerp($".".position,tarpos,4)-$".".position)*delta;

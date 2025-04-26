@@ -2,8 +2,8 @@
 
 [ext_resource type="Script" path="res://scene/ui/working/MusicSheetPanel.gd" id="1_8ahtl"]
 [ext_resource type="Texture2D" uid="uid://cdgc3k1602q7x" path="res://res/img/UI/working/music_sheet_panel.png" id="1_jvl7n"]
-[ext_resource type="LabelSettings" uid="uid://c44kw5puq8sk5" path="res://scene/ui/working_title.tres" id="2_c0pbq"]
 [ext_resource type="Texture2D" uid="uid://bgcotoc1jkxbr" path="res://res/img/UI/zoom.png" id="3_nk5bx"]
+[ext_resource type="LabelSettings" uid="uid://b6wxu31gvqgv1" path="res://scene/ui/working_panel.tres" id="3_rxm3b"]
 
 [node name="MusicSheetPanel" type="Control"]
 layout_mode = 3
@@ -25,21 +25,13 @@ offset_top = -358.0
 offset_right = -108.0
 offset_bottom = -310.0
 text = "选歌菜单"
-label_settings = ExtResource("2_c0pbq")
+label_settings = ExtResource("3_rxm3b")
 metadata/_edit_use_anchors_ = true
 
 [node name="Zoom" type="Sprite2D" parent="MusicSheetPanel"]
 position = Vector2(-231, -282)
 scale = Vector2(0.435, 0.435)
 texture = ExtResource("3_nk5bx")
-
-[node name="filter" type="TextEdit" parent="MusicSheetPanel"]
-offset_left = -207.0
-offset_top = -300.0
-offset_right = -65.0
-offset_bottom = -258.0
-placeholder_text = "TAG/歌手/曲名等"
-scroll_fit_content_height = true
 
 [node name="SelectedTags" type="ScrollContainer" parent="MusicSheetPanel"]
 offset_left = -43.0
@@ -62,4 +54,42 @@ layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 
-[connection signal="text_changed" from="MusicSheetPanel/filter" to="." method="onFilterTextChange"]
+[node name="L2Tags" type="ScrollContainer" parent="MusicSheetPanel"]
+offset_left = -99.0
+offset_top = -235.0
+offset_right = 246.0
+offset_bottom = 3.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MusicSheetPanel/L2Tags"]
+layout_mode = 2
+
+[node name="Songs" type="ScrollContainer" parent="MusicSheetPanel"]
+offset_left = -251.0
+offset_top = 71.0
+offset_right = 244.0
+offset_bottom = 307.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MusicSheetPanel/Songs"]
+layout_mode = 2
+
+[node name="nameFilter" type="LineEdit" parent="MusicSheetPanel"]
+offset_left = -212.0
+offset_top = 34.0
+offset_right = 245.0
+offset_bottom = 71.0
+placeholder_text = "歌名/歌手"
+
+[node name="Zoom2" type="Sprite2D" parent="MusicSheetPanel"]
+position = Vector2(-231, 51)
+scale = Vector2(0.435, 0.435)
+texture = ExtResource("3_nk5bx")
+
+[node name="filter" type="LineEdit" parent="MusicSheetPanel"]
+offset_left = -207.0
+offset_top = -298.0
+offset_right = -69.0
+offset_bottom = -262.0
+placeholder_text = "歌曲标签"
+
+[connection signal="text_changed" from="MusicSheetPanel/nameFilter" to="." method="_on_name_filter_text_changed"]
+[connection signal="text_changed" from="MusicSheetPanel/filter" to="." method="_on_filter_text_changed"]
