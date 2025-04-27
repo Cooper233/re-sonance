@@ -1,0 +1,22 @@
+[
+    {
+        "id":"hiphop",
+        "name":"嘻哈"
+    },{
+        "id":"hiphop_hardcorerap",
+        "name":"硬核说唱",
+        "father":"hiphop"
+    },{
+        "id":"hiphop_traprap",
+        "name":"陷阱说唱",
+        "father":"hiphop"
+    },{
+        "id":"hiphop_westcoastrap",
+        "name":"西海岸说唱",
+        "father":"hiphop"
+    },{
+        "id":"hiphop_experimentalrap",
+        "name":"实验说唱",
+        "father":"hiphop"
+    }
+]

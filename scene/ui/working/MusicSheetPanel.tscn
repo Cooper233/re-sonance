@@ -1,0 +1,95 @@
+[gd_scene load_steps=5 format=3 uid="uid://lf0gbyddrksj"]
+
+[ext_resource type="Script" path="res://scene/ui/working/MusicSheetPanel.gd" id="1_8ahtl"]
+[ext_resource type="Texture2D" uid="uid://cdgc3k1602q7x" path="res://res/img/UI/working/music_sheet_panel.png" id="1_jvl7n"]
+[ext_resource type="Texture2D" uid="uid://bgcotoc1jkxbr" path="res://res/img/UI/zoom.png" id="3_nk5bx"]
+[ext_resource type="LabelSettings" uid="uid://b6wxu31gvqgv1" path="res://scene/ui/working_panel.tres" id="3_rxm3b"]
+
+[node name="MusicSheetPanel" type="Control"]
+layout_mode = 3
+anchor_right = 0.346
+anchor_bottom = 0.81
+offset_right = -0.600037
+offset_bottom = -6.10352e-05
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_8ahtl")
+
+[node name="MusicSheetPanel" type="Sprite2D" parent="."]
+position = Vector2(277, 362)
+texture = ExtResource("1_jvl7n")
+
+[node name="Label" type="Label" parent="MusicSheetPanel"]
+offset_left = -268.0
+offset_top = -358.0
+offset_right = -108.0
+offset_bottom = -310.0
+text = "选歌菜单"
+label_settings = ExtResource("3_rxm3b")
+metadata/_edit_use_anchors_ = true
+
+[node name="Zoom" type="Sprite2D" parent="MusicSheetPanel"]
+position = Vector2(-231, -282)
+scale = Vector2(0.435, 0.435)
+texture = ExtResource("3_nk5bx")
+
+[node name="SelectedTags" type="ScrollContainer" parent="MusicSheetPanel"]
+offset_left = -43.0
+offset_top = -336.0
+offset_right = 242.0
+offset_bottom = -263.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MusicSheetPanel/SelectedTags"]
+layout_mode = 2
+
+[node name="L1Tags" type="ScrollContainer" parent="MusicSheetPanel"]
+offset_left = -257.0
+offset_top = -235.0
+offset_right = -127.0
+offset_bottom = 7.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MusicSheetPanel/L1Tags"]
+custom_minimum_size = Vector2(130, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="L2Tags" type="ScrollContainer" parent="MusicSheetPanel"]
+offset_left = -99.0
+offset_top = -235.0
+offset_right = 246.0
+offset_bottom = 3.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MusicSheetPanel/L2Tags"]
+layout_mode = 2
+
+[node name="Songs" type="ScrollContainer" parent="MusicSheetPanel"]
+offset_left = -251.0
+offset_top = 71.0
+offset_right = 244.0
+offset_bottom = 307.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MusicSheetPanel/Songs"]
+layout_mode = 2
+
+[node name="nameFilter" type="LineEdit" parent="MusicSheetPanel"]
+offset_left = -212.0
+offset_top = 34.0
+offset_right = 245.0
+offset_bottom = 71.0
+placeholder_text = "歌名/歌手"
+
+[node name="Zoom2" type="Sprite2D" parent="MusicSheetPanel"]
+position = Vector2(-231, 51)
+scale = Vector2(0.435, 0.435)
+texture = ExtResource("3_nk5bx")
+
+[node name="filter" type="LineEdit" parent="MusicSheetPanel"]
+offset_left = -207.0
+offset_top = -298.0
+offset_right = -69.0
+offset_bottom = -262.0
+placeholder_text = "歌曲标签"
+
+[connection signal="text_changed" from="MusicSheetPanel/nameFilter" to="." method="_on_name_filter_text_changed"]
+[connection signal="text_changed" from="MusicSheetPanel/filter" to="." method="_on_filter_text_changed"]

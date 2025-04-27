@@ -1,0 +1,22 @@
+[
+    {
+        "id":"independentalternative",
+        "name":"独立另类"
+    },{
+        "id":"independentalternative_phonk",
+        "name":"冯克",
+        "father":"independentalternative"
+    },{
+        "id":"independentalternative_alternativerock",
+        "name":"另类摇滚",
+        "father":"independentalternative"
+    },{
+        "id":"independentalternative_psychedelicrock",
+        "name":"迷幻摇滚",
+        "father":"independentalternative"
+    },{
+        "id":"independentalternative_experimentalrock",
+        "name":"实验摇滚",
+        "father":"independentalternative"
+    }
+]

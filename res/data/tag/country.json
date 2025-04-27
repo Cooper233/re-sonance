@@ -1,0 +1,14 @@
+[
+    {
+        "id":"country",
+        "name":"乡村音乐"
+    },{
+        "id":"country_cowboymusic",
+        "name":"牛仔音乐",
+        "father":"country"
+    },{
+        "id":"country_alternativevillages",
+        "name":"另类乡村",
+        "father":"country"
+    }
+]

@@ -1,0 +1,57 @@
+[gd_scene load_steps=6 format=3 uid="uid://dfg3yg47s6idf"]
+
+[ext_resource type="Script" path="res://scene/ui/common/TagDisplay.gd" id="1_54b5o"]
+[ext_resource type="FontFile" uid="uid://hskocwikmvki" path="res://res/fonts/SanJiYingLangHeiJianTi-ZhongCu-2.ttf" id="1_gp855"]
+[ext_resource type="Texture2D" uid="uid://c4qclasucy20p" path="res://res/img/UI/白 半透.png" id="1_hqk60"]
+[ext_resource type="Script" path="res://scene/ui/common/TagDisplayButton.gd" id="4_fikbv"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_et7xk"]
+font = ExtResource("1_gp855")
+shadow_color = Color(0, 0, 0, 1)
+
+[node name="TagDisplay" type="Control"]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_54b5o")
+
+[node name="Control" type="Control" parent="."]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 3
+anchors_preset = 0
+offset_right = 80.0
+size_flags_horizontal = 3
+
+[node name="NinePatchRect" type="NinePatchRect" parent="Control"]
+layout_mode = 0
+offset_right = 80.0
+offset_bottom = 30.0
+texture = ExtResource("1_hqk60")
+patch_margin_left = 6
+patch_margin_top = 6
+patch_margin_right = 6
+patch_margin_bottom = 6
+
+[node name="Label" type="Label" parent="Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.487
+anchor_right = 0.487
+offset_left = -27.96
+offset_top = 5.0
+offset_right = 28.04
+offset_bottom = 25.0
+text = "TAG名"
+label_settings = SubResource("LabelSettings_et7xk")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TextureButton" type="TextureButton" parent="Control"]
+layout_mode = 0
+offset_right = 80.0
+offset_bottom = 30.0
+script = ExtResource("4_fikbv")
