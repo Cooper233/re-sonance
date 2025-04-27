@@ -30,9 +30,13 @@ texture = ExtResource("2_w61vb")
 position = Vector2(1079, 194)
 texture = ExtResource("2_8rp1r")
 
-[node name="StartButton" type="Sprite2D" parent="."]
-position = Vector2(1376, 772)
-texture = ExtResource("4_l0u4t")
+[node name="StartButton" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 1172.0
+offset_top = 649.0
+offset_right = 1585.0
+offset_bottom = 892.0
+texture_normal = ExtResource("4_l0u4t")
 
 [node name="UserSelectPanel" parent="." instance=ExtResource("7_ilela")]
 layout_mode = 1
@@ -50,3 +54,5 @@ offset_left = 1496.0
 offset_top = 320.0
 offset_right = 1834.0
 offset_bottom = 638.0
+
+[connection signal="button_down" from="StartButton" to="." method="_on_start_button_button_down"]

@@ -34,6 +34,7 @@ func _process(delta):
 		get_tree().current_scene.add_child(face_1)
 		f1 = true
 		f2 = false
+		f3 = false
 
 	elif flag == 2 and not f2:  # 使用 elif 避免重复检查
 		# 移除旧的 face_1（如果存在）
@@ -51,6 +52,7 @@ func _process(delta):
 		get_tree().current_scene.add_child(face_2)
 		f2 = true
 		f1 = false
+		f3 = false
 
 	if flag == 3 and not f3:  # 避免重复实例化
 		# 移除旧的 face_2（如果存在）
@@ -62,12 +64,13 @@ func _process(delta):
 			face_1 = null
 		
 		# 创建新的 face_1
-		face_1 = face1.instantiate()
-		face_1.position = Vector2(595, 359)
-		face_1.text_info = "我喜欢你"
-		get_tree().current_scene.add_child(face_1)
-		f1 = true
+		face_3 = face1.instantiate()
+		face_3.position = Vector2(595, 359)
+		face_3.text_info = "我喜欢你"
+		get_tree().current_scene.add_child(face_3)
+		f3 = true
 		f2 = false
+		f1 = false
 
 	# 清理逻辑（原代码有错误，已修正）
 	if face_1 and not f1:
