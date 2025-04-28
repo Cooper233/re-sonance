@@ -1,0 +1,43 @@
+[gd_scene load_steps=5 format=3 uid="uid://cwcjin0lir0h3"]
+
+[ext_resource type="Script" path="res://scene/ui/working/workingOverButton.gd" id="1_27e5j"]
+[ext_resource type="Texture2D" uid="uid://berxacm23astv" path="res://res/img/UI/working/dismiss_button.png" id="1_fqeku"]
+[ext_resource type="LabelSettings" uid="uid://b6wxu31gvqgv1" path="res://scene/ui/working_panel.tres" id="2_bummm"]
+[ext_resource type="Texture2D" uid="uid://cd1vbi4telym1" path="res://res/img/UI/working/running.png" id="2_v83h3"]
+
+[node name="WorkingOverButton" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -950.0
+offset_bottom = -798.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_27e5j")
+
+[node name="DismissButton" type="Sprite2D" parent="."]
+position = Vector2(324.5, 51)
+texture = ExtResource("1_fqeku")
+
+[node name="leftTime" type="ProgressBar" parent="DismissButton"]
+modulate = Color(1, 0, 0, 1)
+top_level = true
+offset_left = -319.5
+offset_top = 16.0
+offset_right = 315.5
+offset_bottom = 34.0
+value = 50.0
+show_percentage = false
+
+[node name="Label" type="Label" parent="DismissButton"]
+offset_left = -314.5
+offset_top = -17.0
+offset_right = -121.5
+offset_bottom = 14.0
+text = "[强制下班倒计时]"
+label_settings = ExtResource("2_bummm")
+
+[node name="Running" type="Sprite2D" parent="."]
+position = Vector2(461.5, 18)
+texture = ExtResource("2_v83h3")

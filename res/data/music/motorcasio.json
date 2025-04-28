@@ -1,0 +1,46 @@
+[
+    {
+        "id":"oldfool_thebigfeetinthebucket",
+        "name":"thebigfeetinthebucket",
+        "singer":["motorcasio"],
+        "album":"oldfool",
+        "tag":["country","country_cowboymusic","english","walk"]
+    },{
+        "id":"oldfool_bumbersoll ",
+        "name":"bumbersoll ",
+        "singer":["motorcasio"],
+        "album":"oldfool",
+        "tag":["country","country_alternativevillages","english","beat"]
+    },{
+        "id":"oldfool_paralyzed",
+        "name":"Paralyzed",
+        "singer":["motorcasio"],
+        "album":"oldfool",
+        "tag":["country","country_alternativevillages","english","freshandnatural"]
+    },{
+        "id":"oldfool_typicalcrazyme",
+        "name":"typicalcrazyme",
+        "singer":["motorcasio"],
+        "album":"oldfool",
+        "tag":["country","country_cowboymusic","english","work"]
+    },{
+        "id":"oldfool_lipstickonelectricpoles",
+        "name":"lipstickonelectricpoles",
+        "singer":["motorcasio"],
+        "album":"oldfool",
+        "tag":["country","country_alternativevillages","english","delicate"]
+    },{
+        "id":"oldfool_oldfool",
+        "name":"oldfool",
+        "singer":["motorcasio"],
+        "album":"oldfool",
+        "tag":["country","country_alternativevillages","english","magnetism"]
+    },{
+        "id":"oldfool_bluestars",
+        "name":"bluestars",
+        "singer":["motorcasio"],
+        "album":"oldfool",
+        "tag":["country","country_alternativevillages","english","walk"]
+    }
+
+]

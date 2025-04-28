@@ -1,0 +1,33 @@
+[
+    {
+        "id":"paradoxcircuit_silentsupernova",
+        "name":"silentsupernova",
+        "singer":["luminarygrooves"],
+        "album":"paradoxcircuit",
+        "tag":["soundtrack","rock","symphony","english"]
+    },{
+        "id":"paradoxcircuit_fracturedhourglass",
+        "name":"fracturedhourglass",
+        "singer":["luminarygrooves"],
+        "album":"paradoxcircuit",
+        "tag":["puremusic","soundtrack","soundtrack_Orchestra","silence"]
+    },{
+        "id":"paradoxcircuit_rewindtheeclipse",
+        "name":"rewindtheeclipse",
+        "singer":["luminarygrooves"],
+        "album":"paradoxcircuit",
+        "tag":["puremusic","soundtrack","elec","elec_synwave","trance"]
+    },{
+        "id":"paradoxcircuit_glitchtimestream",
+        "name":"glitchtimestream",
+        "singer":["luminarygrooves"],
+        "album":"paradoxcircuit",
+        "tag":["puremusic","soundtrack","elec","glitch","pressing"]
+    },{
+        "id":"paradoxcircuit_rewindprotocol",
+        "name":"rewindprotocol",
+        "singer":["luminarygrooves"],
+        "album":"paradoxcircuit",
+        "tag":["metal","soundtrack","metal_Heavymetal","pressing"]
+    }
+]

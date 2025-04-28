@@ -1,0 +1,22 @@
+[
+    {
+        "id":"История_Полетвалькирий",
+        "name":"Полетвалькирий",
+        "singer":["Kojaniy"],
+        "album":"История",
+        "tag":["elec","elec_phonk","puremusic","hotblooded","asenseofoppression"]
+    },{
+        "id":"История_ВойнаиДевушка",
+        "name":"ВойнаиДевушка",
+        "singer":["Kojaniy"],
+        "album":"История",
+        "tag":["elec","elec_phonk","puremusic","fervor"]
+    },{
+        "id":"История_Полебитвыискрипка",
+        "name":"Полебитвыискрипка",
+        "singer":["Kojaniy"],
+        "album":"История",
+        "tag":["elec","elec_phonk","puremusic","lyrical","emo"]
+    }
+
+]

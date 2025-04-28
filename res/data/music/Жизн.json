@@ -1,0 +1,22 @@
+[
+    {
+        "id":"Жизнь_Такхочетсяжить",
+        "name":"Такхочетсяжить",
+        "singer":["Kojaniy"],
+        "album":"Жизнь",
+        "tag":["rock","rock_Postmodernrock","russian","asenseoflife"]
+    },{
+        "id":"Жизнь_Небо",
+        "name":"Небо",
+        "singer":["Kojaniy"],
+        "album":"Жизнь",
+        "tag":["rock","rock_Postmodernrock","russian"]
+    },{
+        "id":"Жизнь_Море",
+        "name":"Море",
+        "singer":["Kojaniy"],
+        "album":"Жизнь",
+        "tag":["rock","rock_Postmodernrock","russian"]
+    }
+
+]

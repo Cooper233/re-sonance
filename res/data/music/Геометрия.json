@@ -1,0 +1,15 @@
+[
+    {
+        "id":"Геометрия_Лестница",
+        "name":"Лестница",
+        "singer":["Kojaniy"],
+        "album":"Геометрия",
+        "tag":["rock","rock_Spacerock","russian","rhythm","lyrical"]
+    },{
+        "id":"madeamove_Платформа",
+        "name":"Платформа",
+        "singer":["Kojaniy"],
+        "album":"Геометрия",
+        "tag":["rock","rock_Progressiverock","russian","asenseofdespair"]
+    }
+]

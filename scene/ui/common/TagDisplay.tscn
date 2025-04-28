@@ -7,7 +7,8 @@
 
 [sub_resource type="LabelSettings" id="LabelSettings_et7xk"]
 font = ExtResource("1_gp855")
-shadow_color = Color(0, 0, 0, 1)
+outline_size = 5
+outline_color = Color(0, 0, 0, 1)
 
 [node name="TagDisplay" type="Control"]
 custom_minimum_size = Vector2(0, 30)

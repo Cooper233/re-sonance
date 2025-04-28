@@ -3,5 +3,165 @@
         "id": "english",
         "name": "英语",
         "isSpecial":true
+    },{
+        "id":"russian",
+        "name": "俄语",
+        "isSpecial":true
+    },{
+        "id":"chinese",
+        "name": "华语",
+        "isSpecial":true
+    },{
+        "id":"japanese",
+        "name": "日语",
+        "isSpecial":true
+    },{
+        "id":"puremusic",
+        "name": "纯音乐",
+        "isSpecial":true
+    },{
+        "id":"trance",
+        "name": "恍惚",
+        "isSpecial":true
+    },{
+        "id":"epic",
+        "name": "史诗",
+        "isSpecial":true
+    },{
+        "id":"silence",
+        "name": "寂静",
+        "isSpecial":true
+    },{
+        "id":"pressing",
+        "name": "紧迫",
+        "isSpecial":true
+    },{
+        "id":"lyrical",
+        "name": "抒情",
+        "isSpecial":true
+    },{
+        "id":"hotblooded",
+        "name": "热血",
+        "isSpecial":true
+    },{
+        "id":"fervor",
+        "name": "激情",
+        "isSpecial":true
+    },{
+        "id":"emo",
+        "name": "情绪化",
+        "isSpecial":true
+    },{
+        "id":"beat",
+        "name": "踩点",
+        "isSpecial":true
+    },{
+        "id":"violent",
+        "name": "暴力",
+        "isSpecial":true
+    },{
+        "id":"earscratching",
+        "name": "抓耳",
+        "isSpecial":true
+    },{
+        "id":"earscratching",
+        "name": "踩点",
+        "isSpecial":true
+    },{
+        "id":"healing",
+        "name": "治愈系",
+        "isSpecial":true
+    },{
+        "id":"romantic",
+        "name": "浪漫",
+        "isSpecial":true
+    },{
+        "id":"sweet",
+        "name": "甜美",
+        "isSpecial":true
+    },{
+        "id":"smokethroat",
+        "name": "烟嗓",
+        "isSpecial":true
+    },{
+        "id":"freshandnatural",
+        "name": "清新自然",
+        "isSpecial":true
+    },{
+        "id":"delicate",
+        "name": "细腻",
+        "isSpecial":true
+    },{
+        "id":"magnetism",
+        "name": "磁性",
+        "isSpecial":true
+    },{
+        "id":"Cold",
+        "name": "清冷",
+        "isSpecial":true
+    },{
+        "id":"freshen",
+        "name": "清新",
+        "isSpecial":true
+    },{
+        "id":"moist",
+        "name": "湿润",
+        "isSpecial":true
+    },{
+        "id":"silkysmooth",
+        "name": "丝滑流畅",
+        "isSpecial":true
+    },{
+        "id":"rhythm",
+        "name": "节奏感",
+        "isSpecial":true
+    },{
+        "id":"asenseoflife",
+        "name": "生命感",
+        "isSpecial":true
+    },{
+        "id":"asenseofdespair",
+        "name": "颓废感",
+        "isSpecial":true
+    },{
+        "id":"asenseofoppression",
+        "name": "压迫感",
+        "isSpecial":true
+    },{
+        "id":"dizziness",
+        "name": "眩晕感",
+        "isSpecial":true
+    },{
+        "id":"dynamic",
+        "name": "动感",
+        "isSpecial":true
+    },{
+        "id":"industrialfeel",
+        "name": "工业感",
+        "isSpecial":true
+    },{
+        "id":"air",
+        "name": "空气感",
+        "isSpecial":true
+    },{
+        "id":"walk",
+        "name": "散步",
+        "isSpecial":true
+    },{
+        "id":"work",
+        "name": "工作",
+        "isSpecial":true
+    },{
+        "id":"camping",
+        "name": "露营",
+        "isSpecial":true
+    },{
+        "id":"dohousework",
+        "name": "做家务",
+        "isSpecial":true
+    },{
+        "id":"night",
+        "name": "夜晚",
+        "isSpecial":true
     }
 ]

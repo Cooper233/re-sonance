@@ -7,3 +7,5 @@ var tagDislike:Dictionary
 
 var songRecommandDate:Dictionary
 var songRecommandResult:Dictionary
+var songLikeTime:int
+var songDislikeTime:int
