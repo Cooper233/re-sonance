@@ -1,9 +1,9 @@
-[gd_scene load_steps=15 format=3 uid="uid://c1dctian0wl70"]
+[gd_scene load_steps=15 format=3 uid="uid://cea04xoea2rr0"]
 
 [ext_resource type="Script" path="res://scene/ui/working.gd" id="1_734fc"]
 [ext_resource type="Texture2D" uid="uid://bmibxgnywah7t" path="res://res/img/UI/working/day_panel.png" id="1_q4pgc"]
 [ext_resource type="Texture2D" uid="uid://cyty4mwhvgmek" path="res://res/img/UI/working/recommendedTags.png" id="3_e78l2"]
-[ext_resource type="LabelSettings" uid="uid://b6wxu31gvqgv1" path="res://scene/ui/working_panel.tres" id="4_ypdhh"]
+[ext_resource type="LabelSettings" path="res://scene/ui/working_panel.tres" id="4_ypdhh"]
 [ext_resource type="Texture2D" uid="uid://dc6r7rcj8ogot" path="res://res/img/UI/working/city_mid_normal.png" id="5_qbphn"]
 [ext_resource type="PackedScene" uid="uid://d2ovs2nbnlt56" path="res://scene/ui/working/WorkingUserPanel.tscn" id="5_ujlbq"]
 [ext_resource type="Texture2D" uid="uid://chcau0rnwh54h" path="res://res/img/UI/working/city_up_normal.png" id="6_qpqee"]
