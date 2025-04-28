@@ -12,7 +12,7 @@ static var l1Tags:Array
 static var l2Tags:Dictionary
 static var speTags:Array
 
-static func LoadResouces():
+static func LoadResouces():#加载资源
 	if(dataLoadedFlag):
 		return;
 	var loc="res://res/data/person/staticPerson/"

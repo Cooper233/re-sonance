@@ -10,9 +10,9 @@ signal scene_change_requested;
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	InfoManager.LoadResouces()
+	InfoManager.DEBUG()
 	##DEBUG部分
 	##TODO:删去DEBUG
-	InfoManager.DEBUG()
 	personList=InfoManager.personInstances.keys();
 	##DEBUG部分结束
 	var awi=AWI.instantiate();
