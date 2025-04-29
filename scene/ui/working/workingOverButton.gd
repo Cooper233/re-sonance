@@ -17,6 +17,19 @@ func rerend():
 
 func _process(delta):
 	timeLeft-=delta;
+	#print(pressed)
+	if pressed:
+		timeLeft-=delta*10
 	rerend()
 	if(timeLeft<=0):
 		SongGlobalSignal.emit_signal("WK_WorkOver");
+
+var pressed:bool
+
+
+func _on_button_button_down():
+	pressed=true
+
+
+func _on_button_button_up():
+	pressed=false

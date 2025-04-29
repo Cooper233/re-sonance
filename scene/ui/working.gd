@@ -13,6 +13,8 @@ func _ready():
 	InfoManager.DEBUG()
 	
 	playerData=InfoManager.playerData
+	
+	SongGlobalSignal.connect("WK_WorkOver",onWorkOver)
 	$DayPanel/day.text=str("DAY\n",playerData.day)
 	
 	$workingUserPanel.setPersonList(InfoManager.personInstances.keys())
@@ -28,6 +30,10 @@ func _process(delta):
 
 
 func _on_working_over_button_gui_input(event):
-	if event is InputEventMouseButton and event.is_pressed():
-		emit_signal("scene_change_requested2");
+	#if event is InputEventMouseButton and event.is_pressed():
+		#emit_signal("scene_change_requested2");
+	pass
+
+func onWorkOver():
+	emit_signal("scene_change_requested2");
 

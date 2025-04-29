@@ -38,3 +38,14 @@ show_percentage = false
 [node name="Running" type="Sprite2D" parent="."]
 position = Vector2(461.5, 18)
 texture = ExtResource("2_v83h3")
+
+[node name="button" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 2.0
+offset_right = 645.0
+offset_bottom = 95.0
+action_mode = 0
+
+[connection signal="button_down" from="button" to="." method="_on_button_button_down"]
+[connection signal="button_up" from="button" to="." method="_on_button_button_up"]
