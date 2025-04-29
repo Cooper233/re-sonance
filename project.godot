@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Re:sonance"
-run/main_scene="res://scene/before_work_interface.tscn"
+run/main_scene="res://scene/basic_interfacedesign.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
 

@@ -20,16 +20,6 @@ script = ExtResource("1_27e5j")
 position = Vector2(324.5, 51)
 texture = ExtResource("1_fqeku")
 
-[node name="leftTime" type="ProgressBar" parent="DismissButton"]
-modulate = Color(1, 0, 0, 1)
-top_level = true
-offset_left = -319.5
-offset_top = 16.0
-offset_right = 315.5
-offset_bottom = 34.0
-value = 50.0
-show_percentage = false
-
 [node name="Label" type="Label" parent="DismissButton"]
 offset_left = -314.5
 offset_top = -17.0
@@ -37,6 +27,13 @@ offset_right = -121.5
 offset_bottom = 14.0
 text = "[强制下班倒计时]"
 label_settings = ExtResource("2_bummm")
+
+[node name="timeLeft" type="ProgressBar" parent="DismissButton"]
+offset_left = -288.0
+offset_top = 16.0
+offset_right = 296.0
+offset_bottom = 39.0
+show_percentage = false
 
 [node name="Running" type="Sprite2D" parent="."]
 position = Vector2(461.5, 18)

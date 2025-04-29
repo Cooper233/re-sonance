@@ -98,7 +98,7 @@ offset_bottom = 142.0
 
 [node name="WorkingOverButton" parent="." instance=ExtResource("10_vau4d")]
 layout_mode = 1
-offset_left = 903.0
-offset_top = 771.0
-offset_right = -47.0
-offset_bottom = -27.0
+offset_left = 909.0
+offset_top = 774.0
+offset_right = -41.0
+offset_bottom = -24.0
