@@ -3,6 +3,8 @@ extends Control
 
 var playerData:PlayerDataInstance
 
+signal scene_change_requested2;
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	
@@ -23,3 +25,9 @@ func _process(delta):
 	var size=$".".size;
 	tarpos=-(mp-size/2)*0.05;
 	$".".position+=(lerp($".".position,tarpos,4)-$".".position)*delta;
+
+
+func _on_working_over_button_gui_input(event):
+	if event is InputEventMouseButton and event.is_pressed():
+		emit_signal("scene_change_requested2");
+

@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://dhnqls0etyt8e"]
+[gd_scene load_steps=5 format=3 uid="uid://dhnqls0etyt8e"]
 
 [ext_resource type="Script" path="res://main.gd" id="1_gkvnq"]
-[ext_resource type="PackedScene" uid="uid://dynhj60lo40tq" path="res://scene/ui/before_work.tscn" id="2_i248y"]
+[ext_resource type="PackedScene" uid="uid://d3pwa5vfhbp47" path="res://scene/before_work_interface.tscn" id="2_hjnr3"]
 [ext_resource type="PackedScene" uid="uid://oasd1li32uv0" path="res://scene/basic_interfacedesign.tscn" id="3_xd4nb"]
+[ext_resource type="PackedScene" uid="uid://dd8cccax2ka8e" path="res://scene/AfterWork_interface.tscn" id="4_yqdlb"]
 
 [node name="main" type="Control"]
 layout_mode = 3
@@ -12,5 +13,6 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_gkvnq")
-before_work_scene = ExtResource("2_i248y")
+before_work_scene = ExtResource("2_hjnr3")
 basic_interface_design_scene = ExtResource("3_xd4nb")
+after_work_interface_design_scene = ExtResource("4_yqdlb")
