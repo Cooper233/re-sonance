@@ -1,21 +1,21 @@
 [
     {
-        "id":"nobody_pianosonatano.42",
-        "name":"pianosonatano.42",
-        "singer":["nobody"],
-        "album":"nobody",
+        "id":"nobody_Piano_Sonata_No.42",
+        "name":"Piano Sonata No.42",
+        "singer":["Nobody"],
+        "album":"Nobody",
         "tag":["classical","classical_piano","puremusic"]
     },{
-        "id":"nobody_jazzsuiteno.3",
-        "name":"jazzsuiteno.3",
-        "singer":["nobody"],
-        "album":"nobody",
+        "id":"nobody_Jazz_Suite_No.3",
+        "name":"Jazz Suite No.3",
+        "singer":["Nobody"],
+        "album":"Nobody",
         "tag":["classical","classical_Neoclassical","classical_jazz","puremusic"]
     },{
-        "id":"nobody_pianoconcertono.5op.141",
-        "name":"pianoconcertono.5op.141",
-        "singer":["nobody"],
-        "album":"nobody",
+        "id":"nobody_Piano_Concerto_No.5_Op.141",
+        "name":"Piano Concerto No.5 Op.141",
+        "singer":["Nobody"],
+        "album":"Nobody",
         "tag":["classical","classical_piano","puremusic"]
     }
 ]

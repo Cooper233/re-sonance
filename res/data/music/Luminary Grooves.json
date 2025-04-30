@@ -1,0 +1,39 @@
+[
+    {
+        "id":"paradoxcircuit_Silent_Supernova",
+        "name":"Silent Supernova",
+        "singer":["Luminary Grooves"],
+        "album":"Paradox Circuit",
+        "tag":["soundtrack","rock","symphony","english"]
+    },{
+        "id":"paradoxcircuit_Fractured_Hourglass",
+        "name":"Fractured Hourglass",
+        "singer":["Luminary Grooves"],
+        "album":"Paradox Circuit",
+        "tag":["puremusic","soundtrack","soundtrack_Orchestra","silence"]
+    },{
+        "id":"paradoxcircuit_Rewind_the_Eclipse",
+        "name":"Rewind the Eclipse",
+        "singer":["Luminary Grooves"],
+        "album":"Paradox Circuit",
+        "tag":["puremusic","soundtrack","elec","elec_synwave","trance"]
+    },{
+        "id":"paradoxcircuit_Chronostasis",
+        "name":"Chronostasis",
+        "singer":["Luminary Grooves"],
+        "album":"Paradox Circuit",
+        "tag":["puremusic","soundtrack","elec","elec_synwave","trance"]
+    },{
+        "id":"paradoxcircuit_Glitch_Timestream",
+        "name":"Glitch Timestream",
+        "singer":["Luminary Grooves"],
+        "album":"Paradox Circuit",
+        "tag":["puremusic","soundtrack","elec","glitch","pressing"]
+    },{
+        "id":"paradoxcircuit_Rewind_Protocol",
+        "name":"Rewind Protocol",
+        "singer":["Luminary Grooves"],
+        "album":"Paradox Circuit",
+        "tag":["metal","soundtrack","metal_Heavymetal","pressing"]
+    }
+]

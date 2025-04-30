@@ -87,3 +87,5 @@ offset_left = -17.0
 offset_top = -11.0
 offset_right = 465.0
 offset_bottom = 140.0
+
+[connection signal="pressed" from="select" to="." method="_on_select_pressed"]

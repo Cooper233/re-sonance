@@ -20,14 +20,15 @@ func _ready():
 	awi.personList=personList;
 	$ui.add_child(awi);
 	$bg_fx.add_child(bgfx);
-	
+	$AudioStreamPlayer.volume_db=-80;
 	if awi.has_signal("scene_change_requested"):
 		awi.scene_change_requested.connect(_on_scene_change_requested)
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	pass
+	#print($AudioStreamPlayer.volume_db)
+	$AudioStreamPlayer.volume_db=min(0.0,$AudioStreamPlayer.volume_db-lerp($AudioStreamPlayer.volume_db,0.0,0.5)*delta)
 
 
 func _on_scene_change_requested():

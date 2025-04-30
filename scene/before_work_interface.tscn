@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://d3pwa5vfhbp47"]
+[gd_scene load_steps=4 format=3 uid="uid://d3pwa5vfhbp47"]
 
 [ext_resource type="Texture2D" uid="uid://cpwbig7o15xtp" path="res://res/img/background/bg-beforeWork.png" id="1_st2a0"]
 [ext_resource type="Script" path="res://scene/before_work_interface.gd" id="1_wvbsw"]
+[ext_resource type="AudioStream" uid="uid://7dbiil48bi7e" path="res://res/sounds/Loading.mp3" id="3_e4nuo"]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_wvbsw")
@@ -13,3 +14,7 @@ texture = ExtResource("1_st2a0")
 [node name="bg_fx" type="Node2D" parent="."]
 
 [node name="ui" type="Node" parent="."]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_e4nuo")
+autoplay = true

@@ -1,0 +1,45 @@
+[
+    {
+        "id":"walkingdead_walking_dead",
+        "name":"walking dead",
+        "singer":["walking dead"],
+        "album":"walking dead",
+        "tag":["independentalternative","independentalternative_phonk","night"]
+    },{
+        "id":"walkingdead_sometimes",
+        "name":"sometimes",
+        "singer":["walking dead"],
+        "album":"walking dead",
+        "tag":["independentalternative","rock","independentalternative_alternativerock","Cold"]
+    },{
+        "id":"walkingdead_baby",
+        "name":"baby",
+        "singer":["walking dead"],
+        "album":"walking dead",
+        "tag":["independentalternative","rock","independentalternative_alternativerock","camping","freshandnatural"]
+    },{
+        "id":"walkingdead_sour_sweat",
+        "name":"sour sweat",
+        "singer":["walking dead"],
+        "album":"walking dead",
+        "tag":["independentalternative","rock","independentalternative_psychedelicrock","emo"]
+    },{
+        "id":"walkingdead_tambourine",
+        "name":"tambourine",
+        "singer":["walking dead"],
+        "album":"walking dead",
+        "tag":["independentalternative","rock","independentalternative_experimentalrock","moist"]
+    },{
+        "id":"walkingdead_wanted_you",
+        "name":"wanted you",
+        "singer":["walking dead"],
+        "album":"walking dead",
+        "tag":["independentalternative","rock","independentalternative_experimentalrock","walk"]
+    },{
+        "id":"walkingdead_lost_control",
+        "name":"lost control",
+        "singer":["walking dead"],
+        "album":"walking dead",
+        "tag":["independentalternative","rock","independentalternative_experimentalrock","earscratching"]
+    }
+]

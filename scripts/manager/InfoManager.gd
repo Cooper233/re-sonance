@@ -77,19 +77,25 @@ static func LoadResouces():#加载资源
 					tmp.init(i);
 					registerSongBase(tmp);
 					print("SONG-"+tmp.name+"读取完成");
+			else:
+				print("文件"+file_name+"读取失败")
 			file_name=dir.get_next()
 			
 	
 	dataLoadedFlag=true;
 	
+static var debuged=false;
 static func DEBUG():
+	if debuged:
+		return;
 	playerData=PlayerDataInstance.new();
 	playerData.day=2;
-	playerData.weather=PlayerDataInstance.Weather.SUNNY;
+	playerData.weather=PlayerDataInstance.Weather.NORMAL;
 	for i in staticPersons.keys():
 		var tmp=PersonInstance.new();
 		tmp.loadFromStatic(getStaticPerson(i));
 		registerPersonInstance(tmp);
+	debuged=true
 static func getStaticPerson(id:String)->StaticPersonBase:
 	LoadResouces()
 	return staticPersons[id]

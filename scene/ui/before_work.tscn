@@ -2,11 +2,11 @@
 
 [ext_resource type="Texture2D" uid="uid://dneq2513tpvfn" path="res://res/img/UI/title.png" id="1_5niag"]
 [ext_resource type="Script" path="res://scene/ui/before_work.gd" id="1_36h2q"]
-[ext_resource type="Texture2D" uid="uid://bi62m4x1u30hj" path="res://res/img/UI/dayinfo_panel.png" id="2_8rp1r"]
 [ext_resource type="Texture2D" uid="uid://c3imohyeijxu2" path="res://res/img/UI/options_button.png" id="2_w61vb"]
 [ext_resource type="Texture2D" uid="uid://ditkka0me2m3t" path="res://res/img/UI/start_button.png" id="4_l0u4t"]
 [ext_resource type="PackedScene" uid="uid://ce1s8hlb65mnr" path="res://scene/ui/BeforeWork/userSelectPanel.tscn" id="7_ilela"]
 [ext_resource type="PackedScene" uid="uid://bbvmi7x2ren6t" path="res://scene/ui/panel_container.tscn" id="8_bwh7y"]
+[ext_resource type="PackedScene" uid="uid://cldj1jbt8545s" path="res://scene/ui/bw_day_info_panel.tscn" id="8_u36om"]
 [ext_resource type="PackedScene" uid="uid://c7pdnedv1773q" path="res://scene/ui/BeforeWork/userInfoPanel.tscn" id="8_v33lt"]
 
 [node name="BeforeWork" type="Control"]
@@ -25,10 +25,6 @@ texture = ExtResource("1_5niag")
 [node name="OptionsButton" type="Sprite2D" parent="."]
 position = Vector2(130, 60)
 texture = ExtResource("2_w61vb")
-
-[node name="DayinfoPanel" type="Sprite2D" parent="."]
-position = Vector2(1079, 194)
-texture = ExtResource("2_8rp1r")
 
 [node name="StartButton" type="TextureButton" parent="."]
 layout_mode = 0
@@ -54,5 +50,12 @@ offset_left = 1496.0
 offset_top = 320.0
 offset_right = 1834.0
 offset_bottom = 638.0
+
+[node name="BW_DayInfoPanel" parent="." instance=ExtResource("8_u36om")]
+layout_mode = 1
+offset_left = 586.0
+offset_top = 85.0
+offset_right = -29.0
+offset_bottom = -605.0
 
 [connection signal="button_down" from="StartButton" to="." method="_on_start_button_button_down"]

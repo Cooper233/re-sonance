@@ -2,7 +2,11 @@ extends Control
 
 @export var face1:PackedScene;
 
+var INFO_Recent=preload("res://scene/ui/BeforeWork/userInfo_Recent.tscn");
+
 var flag:int=0;
+
+var person:String;
 
 var face_1: Node = null  # 显式声明变量并初始化为 null
 var face_2: Node = null
@@ -13,9 +17,19 @@ var f3 := false
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	SongGlobalSignal.connect("BW_SelectUser",onPersonSelect)
+	f2=true;
 
-
+func rerend_Info():
+	if person=="":
+		return
+	for i in $UserInfoPanel/Info.get_children():
+		$UserInfoPanel/Info.remove_child(i);
+	if f2:
+		var panel=INFO_Recent.instantiate();
+		panel.person=person;
+		panel.rerend();
+		$UserInfoPanel/Info.add_child(panel);
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	if flag == 1 and not f1:  # 避免重复实例化
@@ -28,6 +42,7 @@ func _process(delta):
 			face_3 = null
 		
 		# 创建新的 face_1
+		
 		face_1 = face1.instantiate()
 		face_1.position = Vector2(595, 359)
 		face_1.text_info = "你好"
@@ -46,13 +61,15 @@ func _process(delta):
 			face_3 = null
 		
 		# 创建新的 face_2
-		face_2 = face1.instantiate()
-		face_2.position = Vector2(595, 359)
-		face_2.text_info = "你是个铸币"
-		get_tree().current_scene.add_child(face_2)
+		#face_2 = face1.instantiate()
+		#face_2.position = Vector2(595, 359)
+		#face_2.text_info = "你是个铸币"
+		#get_tree().current_scene.add_child(face_2)
 		f2 = true
 		f1 = false
 		f3 = false
+		rerend_Info();
+		
 
 	if flag == 3 and not f3:  # 避免重复实例化
 		# 移除旧的 face_2（如果存在）
@@ -120,3 +137,8 @@ func _on_sns_button_gui_input(event):
 			$InfoButton.z_index=1;
 			$RecentButton.z_index=2;
 		flag=3;
+
+func onPersonSelect(id:String):
+	person=id;
+	print(person)
+	rerend_Info();

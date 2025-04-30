@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://dd8cccax2ka8e"]
+[gd_scene load_steps=6 format=3 uid="uid://dd8cccax2ka8e"]
 
 [ext_resource type="Script" path="res://scene/AfterWork_interface.gd" id="1_5bh6r"]
 [ext_resource type="Texture2D" uid="uid://cqoiknrvls0mb" path="res://res/img/background/喝茶镜头.png" id="1_uakc5"]
 [ext_resource type="Texture2D" uid="uid://cfys7ecm2vite" path="res://res/img/UI/blue_button13.png" id="1_xet3m"]
+[ext_resource type="AudioStream" uid="uid://blo4pqw7sojft" path="res://res/sounds/Track5.mp3" id="4_ko1ut"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_u2h41"]
 font_color = Color(0, 0, 0, 1)
@@ -28,5 +29,9 @@ offset_right = 834.0
 offset_bottom = 875.5
 text = "前往下一日"
 label_settings = SubResource("LabelSettings_u2h41")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_ko1ut")
+autoplay = true
 
 [connection signal="button_down" from="Bluebutton13" to="." method="_on_bluebutton_13_button_down"]

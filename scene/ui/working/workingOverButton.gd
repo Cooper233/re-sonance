@@ -1,7 +1,7 @@
 extends Control
 
-var timeLeft=20
-var timeMax=20;
+var timeLeft=100
+var timeMax=100;
 
 func _ready():
 	rerend()
@@ -19,7 +19,7 @@ func _process(delta):
 	timeLeft-=delta;
 	#print(pressed)
 	if pressed:
-		timeLeft-=delta*10
+		timeLeft-=delta*30
 	rerend()
 	if(timeLeft<=0):
 		SongGlobalSignal.emit_signal("WK_WorkOver");

@@ -12,18 +12,24 @@ func _ready():
 	TagGlobalSignal.connect("WK_SelectL1Tag",onSelectL1);
 	TagGlobalSignal.connect("WK_SelectL2Tag",onSelectL2);
 	TagGlobalSignal.connect("WK_DeselectTag",onDeselectTag);
+	SongGlobalSignal.connect("WK_ChangeSelectedPerson",onSelectPerson);
 	
 	#for i in range(10):
 		#addSelectedTag("elec")
 		#addSelectedTag("elec_syn")
 		#addSelectedTag("elec_synwave")
-
+func onSelectPerson(id:String):
+	nowPerson=id;
+	rerendL1Tags()
+	rerendL2Tags()
+	rerendSongBox()
 var lastHBox=null;
 var lastHBoxLen:float
 var lastFilter:String
 #TODO:有空之后用字典树进行优化
 var usableTags:Array
 var selectedL1:String
+var nowPerson:String
 func rerendL1Tags():
 	for i in $MusicSheetPanel/L1Tags/VBoxContainer.get_children():
 		$MusicSheetPanel/L1Tags/VBoxContainer.remove_child(i);
@@ -58,6 +64,7 @@ func addSelectedTag(id:String,rerend=false):
 	var tmp=TagDisplay.instantiate();
 	tmp.setId(id);
 	tmp.setMode(TagDisplayMode.Mode.SELECTED);
+	tmp.setPerson(nowPerson);
 	if(lastHBoxLen+tmp.len>=280):
 		lastHBox=HBoxContainer.new();
 		lastHBox.custom_minimum_size.y=40;
@@ -79,6 +86,7 @@ func addL1Tag(id:String):
 	var tmp=TagDisplay.instantiate();
 	tmp.setId(id);
 	tmp.setMode(TagDisplayMode.Mode.SELECT_L1);
+	tmp.setPerson(nowPerson);
 	var hbox=HBoxContainer.new();
 	hbox.alignment=BoxContainer.ALIGNMENT_CENTER;
 	hbox.custom_minimum_size.x=max(130,tmp.len);
@@ -95,6 +103,7 @@ func addL2Tag(id:String):
 	var tmp=TagDisplay.instantiate();
 	tmp.setId(id);
 	tmp.setMode(TagDisplayMode.Mode.SELECT_L2);
+	tmp.setPerson(nowPerson);
 	#if selectedTag.has(id):
 		#tmp.setDisplayColor()
 	if(lastH2BoxLen+tmp.len>=340):
@@ -144,6 +153,7 @@ func rerendSongBox():
 		if checkSongAvaliable(song):
 			var si=SongDisplay.instantiate();
 			si.setId(i);
+			si.setPerson(nowPerson)
 			lastHSBox.add_child(si);
 			lastHSBoxNum+=1;
 			if lastHSBoxNum==2:

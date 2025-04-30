@@ -1,0 +1,45 @@
+[
+    {
+        "id":"lemoncia'sdiary_气泡宣言",
+        "name":"气泡宣言",
+        "singer":["陈雅柠Lemoncia"],
+        "album":"Lemoncia's Diary",
+        "tag":["popular","popular_electronicpop","chinese","air"]
+    },{
+        "id":"lemoncia'sdiary_糖渍",
+        "name":"糖渍",
+        "singer":["陈雅柠Lemoncia"],
+        "album":"Lemoncia's Diary",
+        "tag":["popular","popular_dancepop","chinese","silkysmooth"]
+    },{
+        "id":"lemoncia'sdiary_浪花白",
+        "name":"浪花白",
+        "singer":["陈雅柠Lemoncia"],
+        "album":"Lemoncia's Diary",
+        "tag":["popular","popular_lyricalpop","chinese","silkysmooth"]
+    },{
+        "id":"lemoncia'sdiary_柠檬香皂与蓝调",
+        "name":"柠檬香皂与蓝调",
+        "singer":["陈雅柠Lemoncia"],
+        "album":"Lemoncia's Diary",
+        "tag":["popular","popular_lightrockpop","chinese","dohousework"]
+    },{
+        "id":"lemoncia'sdiary_日出之前吻别",
+        "name":"日出之前吻别",
+        "singer":["陈雅柠Lemoncia"],
+        "album":"Lemoncia's Diary",
+        "tag":["popular","popular_chinesepop","chinese","popular_atmospherepop"]
+    },{
+        "id":"lemoncia'sdiary_不限量",
+        "name":"不限量",
+        "singer":["陈雅柠Lemoncia"],
+        "album":"Lemoncia's Diary",
+        "tag":["popular","popular_lyricalpop","chinese","romantic"]
+    },{
+        "id":"lemoncia'sdiary_2031",
+        "name":"2031",
+        "singer":["陈雅柠Lemoncia"],
+        "album":"Lemoncia's Diary",
+        "tag":["popular","popular_lightrockpop","chinese","sweet"]
+    }
+]

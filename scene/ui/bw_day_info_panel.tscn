@@ -1,0 +1,50 @@
+[gd_scene load_steps=8 format=3 uid="uid://cldj1jbt8545s"]
+
+[ext_resource type="Script" path="res://scene/ui/bw_day_info_panel.gd" id="1_6i1je"]
+[ext_resource type="Shader" path="res://scripts/render/dayinfo.gdshader" id="1_aqhov"]
+[ext_resource type="Texture2D" uid="uid://buu5n8lgppuji" path="res://res/img/UI/addons/before_cloudy.png" id="2_lceyl"]
+[ext_resource type="Texture2D" uid="uid://bi62m4x1u30hj" path="res://res/img/UI/dayinfo_panel.png" id="3_vtvra"]
+[ext_resource type="LabelSettings" uid="uid://clvie2e8j41pe" path="res://scene/ui/Day_Info.tres" id="4_sjjrq"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_xs0ky"]
+shader = ExtResource("1_aqhov")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_vpat7"]
+shader = ExtResource("1_aqhov")
+
+[node name="BW_DayInfoPanel" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -615.0
+offset_bottom = -690.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_6i1je")
+
+[node name="Container" type="Container" parent="."]
+material = SubResource("ShaderMaterial_xs0ky")
+clip_contents = true
+layout_mode = 0
+offset_left = 282.0
+offset_right = 982.0
+offset_bottom = 208.0
+
+[node name="bg" type="Sprite2D" parent="Container"]
+material = SubResource("ShaderMaterial_vpat7")
+position = Vector2(332, 121)
+scale = Vector2(0.778752, 0.778752)
+texture = ExtResource("2_lceyl")
+
+[node name="DayinfoPanel" type="Sprite2D" parent="."]
+position = Vector2(498, 113)
+texture = ExtResource("3_vtvra")
+
+[node name="Label" type="Label" parent="DayinfoPanel"]
+offset_left = -375.0
+offset_top = -53.0
+offset_right = -209.0
+offset_bottom = 8.0
+text = "DAY 1"
+label_settings = ExtResource("4_sjjrq")

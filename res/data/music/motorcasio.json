@@ -1,45 +1,45 @@
 [
     {
-        "id":"oldfool_thebigfeetinthebucket",
-        "name":"thebigfeetinthebucket",
+        "id":"oldfool_The_big_feet_in_the_bucket",
+        "name":"The big feet_in the bucket",
         "singer":["motorcasio"],
-        "album":"oldfool",
+        "album":"old fool",
         "tag":["country","country_cowboymusic","english","walk"]
     },{
-        "id":"oldfool_bumbersoll ",
-        "name":"bumbersoll ",
+        "id":"oldfool_Bumbersoll",
+        "name":"Bumbersoll",
         "singer":["motorcasio"],
-        "album":"oldfool",
+        "album":"old fool",
         "tag":["country","country_alternativevillages","english","beat"]
     },{
-        "id":"oldfool_paralyzed",
+        "id":"oldfool_Paralyzed",
         "name":"Paralyzed",
         "singer":["motorcasio"],
-        "album":"oldfool",
+        "album":"old fool",
         "tag":["country","country_alternativevillages","english","freshandnatural"]
     },{
-        "id":"oldfool_typicalcrazyme",
-        "name":"typicalcrazyme",
+        "id":"oldfool_typical_crazy_me",
+        "name":"typical crazy me",
         "singer":["motorcasio"],
-        "album":"oldfool",
+        "album":"old fool",
         "tag":["country","country_cowboymusic","english","work"]
     },{
-        "id":"oldfool_lipstickonelectricpoles",
-        "name":"lipstickonelectricpoles",
+        "id":"oldfool_Lipstick_on_electric_poles",
+        "name":"Lipstick on electric poles",
         "singer":["motorcasio"],
-        "album":"oldfool",
+        "album":"old fool",
         "tag":["country","country_alternativevillages","english","delicate"]
     },{
-        "id":"oldfool_oldfool",
-        "name":"oldfool",
+        "id":"oldfool_Old_fool",
+        "name":"Old fool",
         "singer":["motorcasio"],
-        "album":"oldfool",
+        "album":"old fool",
         "tag":["country","country_alternativevillages","english","magnetism"]
     },{
-        "id":"oldfool_bluestars",
-        "name":"bluestars",
+        "id":"oldfool_Blue_stars",
+        "name":"Blue stars",
         "singer":["motorcasio"],
-        "album":"oldfool",
+        "album":"old fool",
         "tag":["country","country_alternativevillages","english","walk"]
     }
 
