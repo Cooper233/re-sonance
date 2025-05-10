@@ -5,6 +5,7 @@ var TagDisplay=preload("res://scene/ui/common/TagDisplay.tscn")
 var id:String
 var mode:TagDisplayMode.SongMode
 var longMode:bool
+var person:String
 
 func _ready():
 	rerend()
@@ -31,6 +32,7 @@ func rerend():
 		var ti=TagDisplay.instantiate();
 		ti.setId(tag.id);
 		ti.setMode(TagDisplayMode.Mode.DISPLAY)
+		ti.setPerson(person)
 		len+=ti.len;
 		if len>=(165+(230 if longMode else 0)):
 			break
@@ -43,7 +45,8 @@ func setMode(x:TagDisplayMode.SongMode):
 func setLongMode(x:bool):
 	longMode=x;
 	rerend()
-
+func setPerson(x:String):
+	person=x;
 
 func _on_button_pressed(mouse:int):
 	if mouse==0:

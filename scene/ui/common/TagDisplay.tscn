@@ -56,3 +56,6 @@ layout_mode = 0
 offset_right = 80.0
 offset_bottom = 30.0
 script = ExtResource("4_fikbv")
+
+[connection signal="mouse_entered" from="Control/TextureButton" to="." method="_on_texture_button_mouse_entered"]
+[connection signal="mouse_exited" from="Control/TextureButton" to="." method="_on_texture_button_mouse_exited"]

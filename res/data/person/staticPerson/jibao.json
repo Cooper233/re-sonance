@@ -2,7 +2,21 @@
     "id":"jibao",
     "name":"故障鸡煲",
     "tagEmotion":{
-        "elec": 5,
-        "ost": 2
+        "elec": 1.5,
+        "ost": 2,
+        "metal":-3,
+        "metal_Heavymetal":-7,
+        "soundtrack_Orchestra":1,
+        "popular":2,
+        "popular_electronicpop":4,
+        "popular_lovesong":-1,
+        "popular_dancepop":2,
+        "twodimensional":3,
+        "twodimensional_Virtualsingers":4,
+        "rock_Spacerock":3,
+        "rock_Experimentalrock":-10,
+        "hiphop_traprap":-6,
+        "country":-1,
+        "classical":1
     }
 }

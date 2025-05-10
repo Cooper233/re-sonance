@@ -18,6 +18,8 @@ func _ready():
 	$DayPanel/day.text=str("DAY\n",playerData.day)
 	
 	$workingUserPanel.setPersonList(InfoManager.personInstances.keys())
+	$WK_UserTagInfo.onSelectPerson(InfoManager.personInstances.keys()[0])
+	$MusicSheetPanel.onSelectPerson(InfoManager.personInstances.keys()[0])
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -33,7 +35,9 @@ func _on_working_over_button_gui_input(event):
 	#if event is InputEventMouseButton and event.is_pressed():
 		#emit_signal("scene_change_requested2");
 	pass
-
+#工作结束，进入下一个界面
+#判定歌曲的脚本在UserPanel上
 func onWorkOver():
+	
 	emit_signal("scene_change_requested2");
 

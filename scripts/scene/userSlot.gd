@@ -13,3 +13,7 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	pass
+
+
+func _on_select_pressed():
+	SongGlobalSignal.emit_signal("BW_SelectUser",personId)

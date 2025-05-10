@@ -13,7 +13,9 @@ func _ready():
 func setId(x:String):
 	id=x;
 	rerend();
-
+var person:String
+func setPerson(id:String):
+	person=id
 func rerend():
 	if id=="":
 		return;
@@ -52,3 +54,11 @@ func _on_button_pressed(mouse:int):
 	elif mode==TagDisplayMode.Mode.SELECT_L2:
 		if mouse==0:
 			TagGlobalSignal.emit_signal("WK_SelectL2Tag",id);
+
+
+func _on_texture_button_mouse_entered():
+	TagGlobalSignal.emit_signal("WK_CheckTagInfo",id,person);
+
+
+func _on_texture_button_mouse_exited():
+	TagGlobalSignal.emit_signal("WK_DecheckTagInfo",id,person);

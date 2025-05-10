@@ -1,0 +1,38 @@
+[
+    {
+        "id":"sunsetboomerang_Gilded_Corners",
+        "name":"Gilded Corners",
+        "singer":["L.A. Solstice"],
+        "album":"Sunset Boomerang",
+        "tag":["hiphop","hiphop_hardcorerap","english","violent"]
+    },{
+        "id":"sunsetboomerang_Palm_Shadow_Sprint",
+        "name":"Palm Shadow Sprint",
+        "singer":["L.A. Solstice"],
+        "album":"Sunset Boomerang",
+        "tag":["hiphop","hiphop_traprap","english","rhythm"]
+    },{
+        "id":"sunsetboomerang_Asphalt_Lullaby",
+        "name":"Asphalt Lullaby",
+        "singer":["L.A. Solstice"],
+        "album":"Sunset Boomerang",
+        "tag":["hiphop","hiphop_westcoastrap","english","earscratching"]
+    },{
+        "id":"sunsetboomerang_Chronic_Sunset",
+        "name":"Chronic Sunset",
+        "singer":["L.A. Solstice"],
+        "album":"Sunset Boomerang",
+        "tag":["hiphop","hiphop_experimentalrap","english","industrialfeel"]
+    },{
+        "id":"sunsetboomerang_Rusted_Moonbeams",
+        "name":"Rusted Moonbeams",
+        "singer":["L.A. Solstice"],
+        "album":"Sunset Boomerang",
+        "tag":["hiphop","hiphop_westcoastrap","english","earscratching"]
+    },{
+        "id":"sunsetboomerang_Boomerang_Finale",
+        "name":"Boomerang Finale",
+        "singer":["L.A. Solstice"],
+        "album":"Sunset Boomerang",
+        "tag":["hiphop","hiphop_traprap","english","earscratching"]
+    }

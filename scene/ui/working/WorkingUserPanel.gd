@@ -8,6 +8,7 @@ var personSelectedSong:Dictionary
 func _ready():
 	SongGlobalSignal.connect("WK_SelectSong",_on_Select_Song)
 	SongGlobalSignal.connect("WK_DeselectSong",_on_Deselect_Song)
+	SongGlobalSignal.connect("WK_WorkOver",onWorkOver)
 	rerend()
 
 func setPersonList(list:Array):
@@ -37,6 +38,7 @@ func addSelectedSong(id:String):
 	si.setId(id);
 	si.setLongMode(true)
 	si.setMode(TagDisplayMode.SongMode.USER_PANEL)
+	si.setPerson(nowPerson)
 	rendSelectedNum()
 	$UserSelectedPanel/songBox/VBoxContainer.add_child(si);
 
@@ -80,3 +82,11 @@ func _on_Deselect_Song(id:String):
 		return;
 	sa.remove_at(sa.find(id));
 	rerendSongBox()
+func onWorkOver():
+	for i in personSelectedSong.keys():
+		var person=InfoManager.getPersonInstance(i);
+		for j in personSelectedSong[i]:
+			var flag=person.judgeSong(InfoManager.getSongData(j));
+			person.addSongHistory(InfoManager.getSongData(j),InfoManager.playerData.day)
+		#var person1=InfoManager.getPersonInstance(i);
+		#print(str(person==person1))

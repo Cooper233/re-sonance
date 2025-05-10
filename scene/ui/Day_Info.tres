@@ -1,0 +1,11 @@
+[gd_resource type="LabelSettings" load_steps=2 format=3 uid="uid://clvie2e8j41pe"]
+
+[sub_resource type="SystemFont" id="SystemFont_1t1eh"]
+font_names = PackedStringArray("ROG Fonts")
+
+[resource]
+font = SubResource("SystemFont_1t1eh")
+font_size = 50
+shadow_size = 2
+shadow_color = Color(0.0430392, 0.0430392, 0.0430392, 1)
+shadow_offset = Vector2(2, 2)
