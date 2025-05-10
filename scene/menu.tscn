@@ -1,0 +1,65 @@
+[gd_scene load_steps=3 format=3 uid="uid://bish4bh25ugdd"]
+
+[ext_resource type="Script" path="res://scene/menu.gd" id="1_m01t8"]
+[ext_resource type="Texture2D" uid="uid://0x2paae7o6xu" path="res://res/1.png" id="2_l8uee"]
+
+[node name="menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1_m01t8")
+
+[node name="panel" type="Panel" parent="."]
+layout_mode = 0
+offset_right = 1603.0
+offset_bottom = 906.0
+mouse_filter = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="panel"]
+position = Vector2(802, 449)
+texture = ExtResource("2_l8uee")
+
+[node name="startgame" type="TextureButton" parent="panel"]
+offset_left = 976.0
+offset_top = 137.0
+offset_right = 1596.0
+offset_bottom = 316.0
+mouse_filter = 1
+
+[node name="readload" type="TextureButton" parent="panel"]
+layout_mode = 2
+offset_left = 950.0
+offset_top = 328.0
+offset_right = 1208.0
+offset_bottom = 461.0
+
+[node name="saveload" type="TextureButton" parent="panel"]
+layout_mode = 2
+offset_left = 1213.0
+offset_top = 325.0
+offset_right = 1526.0
+offset_bottom = 473.0
+
+[node name="seting" type="TextureButton" parent="panel"]
+layout_mode = 2
+offset_left = 1119.0
+offset_top = 490.0
+offset_right = 1553.0
+offset_bottom = 608.0
+
+[node name="exit" type="TextureButton" parent="panel"]
+layout_mode = 2
+offset_left = 1216.0
+offset_top = 650.0
+offset_right = 1584.0
+offset_bottom = 764.0
+
+[connection signal="button_down" from="panel/startgame" to="." method="_on_startgame_button_down"]
+[connection signal="button_down" from="panel/readload" to="." method="_on_readload_button_down"]
+[connection signal="button_down" from="panel/saveload" to="." method="_on_saveload_button_down"]
+[connection signal="button_down" from="panel/seting" to="." method="_on_seting_button_down"]
+[connection signal="button_down" from="panel/exit" to="." method="_on_exit_button_down"]

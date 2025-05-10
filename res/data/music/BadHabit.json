@@ -1,22 +1,22 @@
 [
-    {
-        "id":"madeamove_fever",
-        "name":"fever",
-        "singer":["Bad Habit"],
-        "album":"Made a move",
-        "tag":["r&b","r&b_contemporaryr&b","english"]
-    },{
-        "id":"madeamove_smilebaby",
-        "name":"Smilebaby",
-        "singer":["Bad Habit"],
-        "album":"Made a move",
-        "tag":["r&b","r&b_contemporaryr&b","english"]
-    },{
-        "id":"madeamove_no_deadbeat",
-        "name":"No deadbeat",
-        "singer":["Bad Habit"],
-        "album":"Made a move",
-        "tag":["r&b","r&b_contemporaryr&b","english"]
-    }
+	{
+		"id":"madeamove_fever",
+		"name":"fever",
+		"singer":["Bad Habit"],
+		"album":"Made a move",
+		"tag":["r&b","r&b_contemporaryr&b","english"]
+	},{
+		"id":"madeamove_smilebaby",
+		"name":"Smilebaby",
+		"singer":["Bad Habit"],
+		"album":"Made a move",
+		"tag":["r&b","r&b_contemporaryr&b","english"]
+	},{
+		"id":"madeamove_no_deadbeat",
+		"name":"No deadbeat",
+		"singer":["Bad Habit"],
+		"album":"Made a move",
+		"tag":["r&b","r&b_contemporaryr&b","english"]
+	}
 
 ]
